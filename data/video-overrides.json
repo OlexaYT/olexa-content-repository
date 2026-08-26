@@ -1,0 +1,10 @@
+{
+  "_comment": "Map a YouTube video ID to metadata that should override automatic classification.",
+  "overrides": {
+    "EXAMPLE_VIDEO_ID": {
+      "gameSlug": "mosa-lina",
+      "series": "Mosa Lina",
+      "genres": ["Puzzle", "Physics"]
+    }
+  }
+}

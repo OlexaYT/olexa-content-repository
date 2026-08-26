@@ -1,0 +1,20 @@
+{
+  "channel": {
+    "handle": "@OlexaYT",
+    "title": "Olexa",
+    "syncedAt": null,
+    "source": "demo"
+  },
+  "videos": [
+    {"id":"demo-archon","title":"This Roguelike Lets You Build the Perfect Dice","publishedAt":"2026-07-27T16:00:00Z","thumbnail":null,"views":58231,"likes":2800,"durationSeconds":2122,"game":"Archon Soul","gameSlug":"archon-soul","genres":["Roguelike","Dicebuilder"],"tags":["roguelike","dice"]},
+    {"id":"demo-sandustry","title":"I Built an Automation Empire Entirely Out of Sand","publishedAt":"2026-08-17T16:00:00Z","thumbnail":null,"views":41984,"likes":2100,"durationSeconds":2780,"game":"Sandustry","gameSlug":"sandustry","genres":["Automation","Factory","Strategy"],"tags":["automation","factory"]},
+    {"id":"demo-ploink","title":"This Game Is Completely Unhinged","publishedAt":"2026-08-18T16:00:00Z","thumbnail":null,"views":33410,"likes":1900,"durationSeconds":1845,"game":"Ploink","gameSlug":"ploink","genres":["Arcade","Physics","Roguelike"],"tags":["physics"]},
+    {"id":"demo-mosa1","title":"This Physics Puzzle Game Lets You Solve Anything","publishedAt":"2024-05-12T16:00:00Z","thumbnail":null,"views":123418,"likes":5400,"durationSeconds":2450,"game":"Mosa Lina","gameSlug":"mosa-lina","genres":["Puzzle","Physics"],"tags":["puzzle","physics"]},
+    {"id":"demo-mosa2","title":"Mosa Lina Somehow Got Even Better","publishedAt":"2025-02-08T17:00:00Z","thumbnail":null,"views":80421,"likes":3900,"durationSeconds":2631,"game":"Mosa Lina","gameSlug":"mosa-lina","genres":["Puzzle","Physics"],"tags":["puzzle"]},
+    {"id":"demo-he1","title":"I Had to Come Back to this Roguelike","publishedAt":"2026-07-15T16:00:00Z","thumbnail":null,"views":99120,"likes":4200,"durationSeconds":3045,"game":"He Is Coming","gameSlug":"he-is-coming","genres":["Roguelike","Strategy"],"tags":["roguelike"]},
+    {"id":"demo-root","title":"The Roottrees are Dead and it's my job to solve it","publishedAt":"2025-03-03T17:00:00Z","thumbnail":null,"views":70550,"likes":3300,"durationSeconds":3862,"game":"The Roottrees Are Dead","gameSlug":"the-roottrees-are-dead","genres":["Mystery","Deduction","Puzzle"],"tags":["mystery","deduction"]},
+    {"id":"demo-galley","title":"It's My Job to Solve the Incident at Galley House","publishedAt":"2026-06-19T16:00:00Z","thumbnail":null,"views":137900,"likes":6200,"durationSeconds":4310,"game":"The Incident at Galley House","gameSlug":"the-incident-at-galley-house","genres":["Mystery","Deduction","Puzzle"],"tags":["mystery","deduction"]},
+    {"id":"demo-zoom","title":"I Created an Entire Ecosystem Out of Dominoes","publishedAt":"2026-08-07T16:00:00Z","thumbnail":null,"views":47220,"likes":2200,"durationSeconds":2310,"game":"Zoominoes","gameSlug":"zoominoes","genres":["Puzzle","Strategy"],"tags":["puzzle"]},
+    {"id":"demo-old","title":"A Very Old Olexa Video From The Vault","publishedAt":"2017-08-25T16:00:00Z","thumbnail":null,"views":614,"likes":45,"durationSeconds":1234,"game":null,"gameSlug":null,"genres":[],"tags":["archive"]}
+  ]
+}

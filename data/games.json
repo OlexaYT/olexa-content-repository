@@ -1,0 +1,12 @@
+{
+  "games": [
+    {"slug":"mosa-lina","name":"Mosa Lina","genres":["Puzzle","Physics"],"description":"Physics sandbox puzzle chaos and a recurring Olexa favorite."},
+    {"slug":"he-is-coming","name":"He Is Coming","genres":["Roguelike","Strategy"]},
+    {"slug":"the-roottrees-are-dead","name":"The Roottrees Are Dead","genres":["Mystery","Deduction","Puzzle"]},
+    {"slug":"the-incident-at-galley-house","name":"The Incident at Galley House","genres":["Mystery","Deduction","Puzzle"]},
+    {"slug":"archon-soul","name":"Archon Soul","genres":["Roguelike","Dicebuilder"]},
+    {"slug":"sandustry","name":"Sandustry","genres":["Automation","Factory","Strategy"]},
+    {"slug":"zoominoes","name":"Zoominoes","genres":["Puzzle","Strategy"]},
+    {"slug":"ploink","name":"Ploink","genres":["Arcade","Physics","Roguelike"]}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {"gameSlug":"mosa-lina","any":["mosa lina"]},
+    {"gameSlug":"he-is-coming","any":["he is coming","he_is_coming"]},
+    {"gameSlug":"the-roottrees-are-dead","any":["the roottrees are dead","roottrees"]},
+    {"gameSlug":"the-incident-at-galley-house","any":["incident at galley house","galley house"]},
+    {"gameSlug":"archon-soul","any":["archon soul"]},
+    {"gameSlug":"sandustry","any":["sandustry"]},
+    {"gameSlug":"zoominoes","any":["zoominoes"]},
+    {"gameSlug":"ploink","any":["ploink"]}
+  ]
+}

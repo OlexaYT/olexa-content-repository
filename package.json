@@ -1,0 +1,12 @@
+{
+  "name": "olexa-content-repository",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Searchable Olexa YouTube archive for GitHub Pages",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "sync": "node scripts/sync-youtube.js",
+    "check": "node --check js/common.js && node --check js/app.js && node --check js/game.js && node --check js/community.js && node --check scripts/sync-youtube.js && node --check scripts/dev-server.js"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game — Olexa Archive</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">O</span><span><b>OLEXA</b><small>ARCHIVE</small></span></a>
+    <nav class="top-nav"><a href="index.html">Archive</a><a href="community.html">Community</a></nav>
+  </header>
+  <main class="shell game-page">
+    <a class="back-link" href="index.html">← Back to archive</a>
+    <section class="game-hero" id="gameHero"></section>
+    <section class="game-videos">
+      <div class="section-heading"><div><p class="eyebrow">WATCH HISTORY</p><h2 id="gameVideoHeading">Videos</h2></div><select id="gameSort"><option value="oldest">Start from the beginning</option><option value="newest">Newest first</option><option value="views">Most viewed</option></select></div>
+      <div class="video-grid" id="gameVideoGrid"></div>
+    </section>
+  </main>
+  <footer class="site-footer shell"><div><b>OLEXA ARCHIVE</b><span>One more episode was a lie.</span></div><a href="index.html">Browse all games</a></footer>
+  <template id="videoCardTemplate">
+    <article class="video-card"><a class="thumbnail-link" target="_blank" rel="noopener"><div class="thumbnail-wrap"><img class="thumbnail" alt="" loading="lazy" /><div class="thumbnail-fallback"><span>O</span></div><span class="duration-badge"></span><span class="year-badge"></span></div></a><div class="card-body"><div class="card-meta"><a class="game-link"></a><span class="dot">•</span><span class="views"></span></div><h3><a class="title-link" target="_blank" rel="noopener"></a></h3><div class="tag-row"></div></div></article>
+  </template>
+  <script src="js/common.js" defer></script>
+  <script src="js/game.js" defer></script>
+</body>
+</html>
