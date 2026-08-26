@@ -18,8 +18,8 @@ A zero-database, GitHub-Pages-friendly archive for the Olexa YouTube channel.
 - Persistent canonical game records with aggregate Olexa coverage statistics
 - Data-quality audit queues for unidentified, ambiguous, malformed, and duplicate mappings
 - Game classification rules + per-video manual overrides
-- GitHub Actions scheduled sync every 6 hours
-- GitHub Pages deployment workflows
+- Race-safe hourly GitHub Actions sync
+- Independent GitHub Pages deployment workflow
 - No runtime backend and no API key shipped to the browser
 
 ## 1. Preview it immediately
@@ -143,14 +143,15 @@ YOUTUBE_API_KEY
 ```
 
 5. Paste the API key as the secret value.
-6. Open **Actions → Sync YouTube + Deploy Pages → Run workflow** once.
+6. Open **Actions → Sync YouTube Catalog → Run workflow** once.
 
 After that:
 
-- normal pushes deploy the site;
-- the YouTube sync runs every 6 hours;
+- normal pushes run only the Pages deployment;
+- the YouTube sync runs hourly or by manual dispatch;
 - the sync verifies and commits the refreshed video archive, canonical games, and audit report;
-- the same workflow immediately publishes the refreshed site.
+- generated-data pushes trigger the independent Pages deployment;
+- the sync rebases onto the newest `main` before pushing, preventing concurrent Codex changes from causing a non-fast-forward failure.
 
 ## Useful commands
 
