@@ -150,7 +150,7 @@ After that:
 - normal pushes run only the Pages deployment;
 - the YouTube sync runs hourly or by manual dispatch;
 - the sync verifies and commits the refreshed video archive, canonical games, and audit report;
-- generated-data pushes trigger the independent Pages deployment;
+- successful catalog-sync completion triggers the independent Pages deployment, including sync commits made with GitHub's workflow token;
 - the sync rebases onto the newest `main` before pushing, preventing concurrent Codex changes from causing a non-fast-forward failure.
 
 ## Useful commands
