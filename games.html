@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Browse the indie games featured on Olexa, with video history and Steam links."><title>Game Library — Olexa Game Vault</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-art" aria-hidden="true"></span><span><b>OLEXA</b><small>GAME VAULT</small></span></a><nav class="top-nav"><a href="index.html">Videos</a><a class="active" href="games.html">Games</a><a href="community.html">Community</a></nav></header>
+  <main>
+    <section class="library-hero"><div class="shell library-hero-inner"><div><p class="eyebrow light">INDIE GAME REPOSITORY</p><h1>Every game<br><span>in the vault.</span></h1><p>Browse games Olexa has covered, jump into the full video history, and head straight to Steam when you find something interesting.</p></div><span class="brand-art" aria-hidden="true"></span></div></section>
+    <section class="shell library-section">
+      <div class="library-toolbar"><label class="search-box"><span class="search-icon">⌕</span><input id="gameSearch" type="search" placeholder="Search the game library…"></label><label><span>Sort</span><select id="gameLibrarySort"><option value="recent">Recently played</option><option value="videos">Most videos</option><option value="views">Most viewed</option><option value="oldest">Oldest discoveries</option><option value="name">A–Z</option></select></label><label class="check-label"><input id="steamOnly" type="checkbox"><span>Steam-linked only</span></label></div>
+      <div class="section-heading"><div><p class="eyebrow">THE LIBRARY</p><h2>Games Olexa has played</h2></div><div class="result-count" id="gameLibraryCount">Loading…</div></div>
+      <div class="game-library-grid" id="gameLibraryGrid"></div>
+    </section>
+  </main>
+  <footer class="site-footer shell"><div class="footer-brand"><span class="brand-art" aria-hidden="true"></span><div><b>OLEXA GAME VAULT</b><span>The indie game rabbit hole.</span></div></div><div class="footer-links"><a href="index.html">Video archive</a><a href="https://www.youtube.com/@OlexaYT" target="_blank" rel="noopener">YouTube ↗</a></div></footer>
+  <script src="js/common.js" defer></script><script src="js/games.js" defer></script>
+</body>
+</html>

@@ -1,134 +1,62 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A searchable archive of Olexa videos, games, series, and community creations." />
-  <title>Olexa Archive</title>
-  <link rel="preconnect" href="https://i.ytimg.com" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Olexa Game Vault — search thousands of Olexa videos and discover the indie games behind them.">
+  <title>Olexa Game Vault</title>
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Olexa Archive home">
-      <span class="brand-mark">O</span>
-      <span><b>OLEXA</b><small>ARCHIVE</small></span>
-    </a>
-    <nav class="top-nav" aria-label="Primary navigation">
-      <a class="active" href="index.html">Archive</a>
-      <a href="community.html">Community</a>
-      <button class="ghost-button" id="randomNavButton" type="button">Random video ↗</button>
-    </nav>
+    <a class="brand" href="index.html" aria-label="Olexa Game Vault home"><span class="brand-art" aria-hidden="true"></span><span><b>OLEXA</b><small>GAME VAULT</small></span></a>
+    <nav class="top-nav" aria-label="Primary navigation"><a class="active" href="index.html">Videos</a><a href="games.html">Games</a><a href="community.html">Community</a><button class="ghost-button" id="randomNavButton" type="button">Random video ↗</button></nav>
   </header>
 
   <main>
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow">THE OLEXA CONTENT REPOSITORY</p>
-        <h1>Every game.<br /><span>Every questionable decision.</span></h1>
-        <p class="hero-description">Search years of Olexa videos by game, genre, year, series, or whatever weird rabbit hole you want to fall into.</p>
-        <div class="hero-actions">
-          <button class="primary-button" id="heroRandomButton" type="button">Give me something to watch</button>
-          <a class="text-link" href="#archive">Browse everything ↓</a>
+    <section class="brand-hero">
+      <div class="brand-hero-bg"></div>
+      <div class="shell brand-hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow light">THE OLEXA CONTENT REPOSITORY</p>
+          <h1>Welcome to the<br><span>Game Vault.</span></h1>
+          <p class="hero-description">Thousands of videos. Hundreds of indie games. Search the backlog, rediscover an old obsession, or find something new to play.</p>
+          <div class="hero-actions"><a class="primary-button" href="games.html">Explore the game library</a><button class="hero-outline-button" id="heroRandomButton" type="button">Give me something to watch</button></div>
         </div>
+        <span class="hero-mark" aria-hidden="true"></span>
       </div>
-      <div class="hero-stats" id="heroStats" aria-live="polite"></div>
     </section>
 
+    <section class="stats-strip"><div class="shell hero-stats" id="heroStats" aria-live="polite"></div></section>
+
     <section class="discovery shell" id="discoverySections">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">DISCOVER</p>
-          <h2>Pick a rabbit hole</h2>
-        </div>
-        <p id="lastUpdated" class="muted"></p>
-      </div>
-      <div class="discovery-grid">
-        <article class="feature-panel" id="onThisDayPanel"></article>
-        <article class="feature-panel" id="topGamesPanel"></article>
-        <article class="feature-panel accent-panel" id="timeMachinePanel"></article>
-      </div>
+      <div class="section-heading"><div><p class="eyebrow">DISCOVER</p><h2>Pick a rabbit hole</h2></div><p id="lastUpdated" class="muted"></p></div>
+      <div class="discovery-grid"><article class="feature-panel" id="onThisDayPanel"></article><article class="feature-panel" id="topGamesPanel"></article><article class="feature-panel accent-panel" id="timeMachinePanel"></article></div>
     </section>
 
     <section class="archive-section shell" id="archive">
-      <div class="section-heading archive-heading">
-        <div>
-          <p class="eyebrow">THE VAULT</p>
-          <h2>Browse the archive</h2>
-        </div>
-        <div class="result-count" id="resultCount">Loading…</div>
-      </div>
-
+      <div class="section-heading archive-heading"><div><p class="eyebrow">THE VIDEO VAULT</p><h2>Browse every upload</h2></div><div class="result-count" id="resultCount">Loading…</div></div>
       <div class="search-panel">
-        <label class="search-box">
-          <span class="search-icon">⌕</span>
-          <input id="searchInput" type="search" placeholder="Search a game, title, tag, series…" autocomplete="off" />
-          <kbd>/</kbd>
-        </label>
+        <label class="search-box"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Search a game, title, tag, series…" autocomplete="off"><kbd>/</kbd></label>
         <div class="filter-row">
-          <label>
-            <span>Game</span>
-            <select id="gameFilter"><option value="">All games</option></select>
-          </label>
-          <label>
-            <span>Genre</span>
-            <select id="genreFilter"><option value="">All genres</option></select>
-          </label>
-          <label>
-            <span>Year</span>
-            <select id="yearFilter"><option value="">All years</option></select>
-          </label>
-          <label>
-            <span>Sort</span>
-            <select id="sortFilter">
-              <option value="newest">Newest first</option>
-              <option value="oldest">Oldest first</option>
-              <option value="views">Most viewed</option>
-              <option value="duration">Longest</option>
-              <option value="random">Chaos mode</option>
-            </select>
-          </label>
+          <label><span>Game</span><select id="gameFilter"><option value="">All games</option></select></label>
+          <label><span>Genre</span><select id="genreFilter"><option value="">All genres</option></select></label>
+          <label><span>Year</span><select id="yearFilter"><option value="">All years</option></select></label>
+          <label><span>Sort</span><select id="sortFilter"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="views">Most viewed</option><option value="duration">Longest</option><option value="random">Chaos mode</option></select></label>
           <button class="clear-button" id="clearFilters" type="button">Clear</button>
         </div>
         <div class="quick-filters" id="quickFilters"></div>
       </div>
-
       <div class="video-grid" id="videoGrid" aria-live="polite"></div>
-      <div class="empty-state hidden" id="emptyState">
-        <p class="eyebrow">NOTHING IN THE VAULT</p>
-        <h3>No videos matched that combination.</h3>
-        <button class="secondary-button" id="emptyReset" type="button">Reset filters</button>
-      </div>
-      <div class="load-more-wrap">
-        <button class="secondary-button hidden" id="loadMoreButton" type="button">Load more</button>
-      </div>
+      <div class="empty-state hidden" id="emptyState"><p class="eyebrow">NOTHING IN THE VAULT</p><h3>No videos matched that combination.</h3><button class="secondary-button" id="emptyReset" type="button">Reset filters</button></div>
+      <div class="load-more-wrap"><button class="secondary-button hidden" id="loadMoreButton" type="button">Load more</button></div>
     </section>
   </main>
 
-  <footer class="site-footer shell">
-    <div><b>OLEXA ARCHIVE</b><span>Built to make the backlog dangerous again.</span></div>
-    <a href="https://www.youtube.com/@OlexaYT" target="_blank" rel="noopener">Watch on YouTube ↗</a>
-  </footer>
+  <footer class="site-footer shell"><div class="footer-brand"><span class="brand-art" aria-hidden="true"></span><div><b>OLEXA GAME VAULT</b><span>Built to make the backlog dangerous again.</span></div></div><div class="footer-links"><a href="games.html">Game library</a><a href="https://www.youtube.com/@OlexaYT" target="_blank" rel="noopener">YouTube ↗</a></div></footer>
 
-  <template id="videoCardTemplate">
-    <article class="video-card">
-      <a class="thumbnail-link" target="_blank" rel="noopener">
-        <div class="thumbnail-wrap">
-          <img class="thumbnail" alt="" loading="lazy" />
-          <div class="thumbnail-fallback" aria-hidden="true"><span>O</span></div>
-          <span class="duration-badge"></span>
-          <span class="year-badge"></span>
-        </div>
-      </a>
-      <div class="card-body">
-        <div class="card-meta"><a class="game-link"></a><span class="dot">•</span><span class="views"></span></div>
-        <h3><a class="title-link" target="_blank" rel="noopener"></a></h3>
-        <div class="tag-row"></div>
-      </div>
-    </article>
-  </template>
-
-  <script src="js/common.js" defer></script>
-  <script src="js/app.js" defer></script>
+  <template id="videoCardTemplate"><article class="video-card"><a class="thumbnail-link" target="_blank" rel="noopener"><div class="thumbnail-wrap"><img class="thumbnail" alt="" loading="lazy"><div class="thumbnail-fallback" aria-hidden="true"><span class="brand-art" aria-hidden="true"></span></div><span class="duration-badge"></span><span class="year-badge"></span></div></a><div class="card-body"><div class="card-meta"><a class="game-link"></a><span class="dot">•</span><span class="views"></span><a class="steam-mini hidden" target="_blank" rel="noopener">Steam ↗</a></div><h3><a class="title-link" target="_blank" rel="noopener"></a></h3><div class="tag-row"></div></div></article></template>
+  <script src="js/common.js" defer></script><script src="js/app.js" defer></script>
 </body>
 </html>

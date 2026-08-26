@@ -12,8 +12,6 @@ const CHANNEL_HANDLE = process.env.YOUTUBE_CHANNEL_HANDLE || '@OlexaYT';
 
 if (!API_KEY) {
   console.error('Missing YOUTUBE_API_KEY.');
-  console.error('PowerShell (current session): $env:YOUTUBE_API_KEY="your-key"');
-  console.error('Then run: npm run sync');
   process.exit(1);
 }
 
@@ -35,19 +33,19 @@ function chunks(list, size) {
 function isoDurationToSeconds(value = '') {
   const m = value.match(/^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/);
   if (!m) return 0;
-  return (Number(m[1]||0)*86400)+(Number(m[2]||0)*3600)+(Number(m[3]||0)*60)+Number(m[4]||0);
+  return (Number(m[1] || 0) * 86400) + (Number(m[2] || 0) * 3600) + (Number(m[3] || 0) * 60) + Number(m[4] || 0);
 }
 
 async function api(endpoint, params) {
   const url = new URL(`${API}/${endpoint}`);
-  for (const [k,v] of Object.entries({...params, key:API_KEY})) {
+  for (const [k, v] of Object.entries({ ...params, key: API_KEY })) {
     if (v !== undefined && v !== null && v !== '') url.searchParams.set(k, String(v));
   }
-  const response = await fetch(url, { headers: { 'Accept': 'application/json' } });
+  const response = await fetch(url, { headers: { Accept: 'application/json' } });
   if (!response.ok) {
     let details = '';
     try { details = JSON.stringify(await response.json()); } catch { details = await response.text(); }
-    throw new Error(`YouTube API ${response.status}: ${details.slice(0,800)}`);
+    throw new Error(`YouTube API ${response.status}: ${details.slice(0, 800)}`);
   }
   return response.json();
 }
@@ -56,12 +54,61 @@ function chooseThumbnail(thumbnails = {}) {
   return (thumbnails.maxres || thumbnails.standard || thumbnails.high || thumbnails.medium || thumbnails.default || {}).url || null;
 }
 
-function classify(raw, games, rules, overrides) {
+function cleanGameName(value = '') {
+  return value
+    .replace(/https?:\/\/\S+/g, '')
+    .replace(/[|•]+$/g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/^[\s:–—-]+|[\s:–—-]+$/g, '')
+    .trim();
+}
+
+function nameFromSteamPath(pathname = '') {
+  try {
+    const parts = decodeURIComponent(pathname).split('/').filter(Boolean);
+    const appIndex = parts.findIndex(x => x === 'app');
+    const slug = appIndex >= 0 ? parts[appIndex + 2] : '';
+    return cleanGameName((slug || '').replace(/_/g, ' '));
+  } catch {
+    return '';
+  }
+}
+
+function extractSteam(description = '') {
+  const regex = /https?:\/\/(?:store\.)?steampowered\.com\/app\/(\d+)(?:\/[^\s?#]*)?/ig;
+  const match = regex.exec(description);
+  if (!match) return null;
+
+  const appId = match[1];
+  const steamUrl = `https://store.steampowered.com/app/${appId}/`;
+  const before = description.slice(Math.max(0, match.index - 260), match.index);
+  const patterns = [
+    /check\s+out\s+([^\n\r]{1,120}?)\s+here!?\s*$/i,
+    /check\s+out\s+([^\n\r]{1,120}?)\s+on\s+steam!?\s*$/i,
+    /play\s+([^\n\r]{1,120}?)\s+here!?\s*$/i
+  ];
+  let name = '';
+  for (const pattern of patterns) {
+    const m = before.match(pattern);
+    if (m?.[1]) { name = cleanGameName(m[1]); break; }
+  }
+
+  if (!name) {
+    try { name = nameFromSteamPath(new URL(match[0]).pathname); }
+    catch { name = ''; }
+  }
+
+  if (!name) name = `Steam App ${appId}`;
+  return { steamAppId: appId, steamUrl, gameName: name };
+}
+
+function manualClassification(raw, games, rules, overrides) {
   const override = overrides[raw.id] || {};
   if (override.hide) return { hide: true };
   const gameBySlug = new Map(games.map(g => [g.slug, g]));
 
   let slug = override.gameSlug || null;
+  let source = slug ? 'override' : null;
   if (!slug) {
     const haystack = [raw.snippet.title, raw.snippet.description, ...(raw.snippet.tags || [])].join('\n').toLowerCase();
     let best = null;
@@ -72,6 +119,7 @@ function classify(raw, games, rules, overrides) {
       if (!best || score > best.score) best = { slug: rule.gameSlug, score };
     }
     slug = best?.slug || null;
+    if (slug) source = 'rule';
   }
 
   const game = slug ? gameBySlug.get(slug) : null;
@@ -80,6 +128,7 @@ function classify(raw, games, rules, overrides) {
     game: override.game || game?.name || null,
     genres: override.genres || game?.genres || [],
     series: override.series || null,
+    source,
     hide: false
   };
 }
@@ -118,20 +167,53 @@ async function main() {
       part: 'snippet,contentDetails,statistics,status', id: batches[i].join(','), maxResults: 50
     });
     rawVideos.push(...(result.items || []));
-    process.stdout.write(`\rMetadata batches: ${i+1}/${batches.length} · videos: ${rawVideos.length}`);
+    process.stdout.write(`\rMetadata batches: ${i + 1}/${batches.length} · videos: ${rawVideos.length}`);
   }
   process.stdout.write('\n');
 
-  const gamesData = readJSON('games.json', {games:[]});
-  const rulesData = readJSON('game-rules.json', {rules:[]});
-  const overridesData = readJSON('video-overrides.json', {overrides:{}});
+  const gamesData = readJSON('games.json', { games: [] });
+  const rulesData = readJSON('game-rules.json', { rules: [] });
+  const overridesData = readJSON('video-overrides.json', { overrides: {} });
   const games = gamesData.games || [];
   const rules = rulesData.rules || [];
   const overrides = overridesData.overrides || {};
+  const gameBySlug = new Map(games.map(g => [g.slug, g]));
+
+  // First pass: if a manually-known game has a Steam link, remember that App ID.
+  // That lets other episodes of the same game inherit the curated slug automatically.
+  const steamToManualSlug = new Map();
+  for (const raw of rawVideos) {
+    const manual = manualClassification(raw, games, rules, overrides);
+    const steam = extractSteam(raw.snippet.description || '');
+    if (!manual.hide && manual.gameSlug && steam?.steamAppId) {
+      steamToManualSlug.set(steam.steamAppId, manual.gameSlug);
+    }
+  }
 
   const videos = rawVideos.map(raw => {
-    const meta = classify(raw, games, rules, overrides);
-    if (meta.hide) return null;
+    const manual = manualClassification(raw, games, rules, overrides);
+    if (manual.hide) return null;
+
+    const steam = extractSteam(raw.snippet.description || '');
+    let gameSlug = manual.gameSlug;
+    let game = manual.game;
+    let genres = manual.genres || [];
+    let gameSource = manual.source;
+
+    if (!gameSlug && steam?.steamAppId && steamToManualSlug.has(steam.steamAppId)) {
+      gameSlug = steamToManualSlug.get(steam.steamAppId);
+      const curated = gameBySlug.get(gameSlug);
+      game = curated?.name || steam.gameName;
+      genres = curated?.genres || [];
+      gameSource = 'steam+curated';
+    } else if (!gameSlug && steam?.steamAppId) {
+      gameSlug = `steam-${steam.steamAppId}`;
+      game = steam.gameName;
+      gameSource = 'steam';
+    }
+
+    if (gameSlug && !game) game = gameBySlug.get(gameSlug)?.name || steam?.gameName || null;
+
     const stats = raw.statistics || {};
     return {
       id: raw.id,
@@ -142,17 +224,23 @@ async function main() {
       likes: Number(stats.likeCount || 0),
       comments: Number(stats.commentCount || 0),
       durationSeconds: isoDurationToSeconds(raw.contentDetails?.duration),
-      game: meta.game,
-      gameSlug: meta.gameSlug,
-      genres: meta.genres,
-      series: meta.series,
+      game,
+      gameSlug,
+      gameSource,
+      genres,
+      series: manual.series || null,
+      steamAppId: steam?.steamAppId || null,
+      steamUrl: steam?.steamUrl || null,
       tags: raw.snippet.tags || [],
-      descriptionSnippet: (raw.snippet.description || '').replace(/\s+/g,' ').trim().slice(0,320),
+      descriptionSnippet: (raw.snippet.description || '').replace(/\s+/g, ' ').trim().slice(0, 420),
       url: `https://www.youtube.com/watch?v=${raw.id}`
     };
-  }).filter(Boolean).sort((a,b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  }).filter(Boolean).sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   const assigned = videos.filter(v => v.gameSlug).length;
+  const steamDetected = videos.filter(v => v.steamAppId).length;
+  const uniqueGames = new Set(videos.filter(v => v.gameSlug).map(v => v.gameSlug)).size;
+
   const output = {
     channel: {
       id: channel.id,
@@ -167,13 +255,18 @@ async function main() {
       syncedAt: new Date().toISOString(),
       source: 'youtube-data-api-v3'
     },
+    catalog: {
+      identifiedVideos: assigned,
+      steamLinkedVideos: steamDetected,
+      uniqueGames
+    },
     videos
   };
 
   writeJSON('videos.json', output);
   console.log(`Done. Wrote ${videos.length} public videos to data/videos.json.`);
-  console.log(`Game classification: ${assigned}/${videos.length} assigned (${videos.length ? Math.round(assigned/videos.length*100) : 0}%).`);
-  console.log('Edit data/game-rules.json for bulk matching or data/video-overrides.json for one-off corrections.');
+  console.log(`Games identified: ${assigned}/${videos.length} (${videos.length ? Math.round(assigned / videos.length * 100) : 0}%).`);
+  console.log(`Steam links found: ${steamDetected}/${videos.length} · unique game records: ${uniqueGames}.`);
 }
 
 main().catch(err => {
