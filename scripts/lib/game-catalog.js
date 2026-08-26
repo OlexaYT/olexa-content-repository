@@ -147,6 +147,8 @@ function aliasesForName(name = '') {
   const aliases = new Set();
   const normalized = normalizeText(name);
   if (normalized) aliases.add(normalized);
+  const withCamelCaseSpacing = normalizeText(String(name).replace(/([a-z0-9])([A-Z])/g, '$1 $2'));
+  if (withCamelCaseSpacing.length >= 3) aliases.add(withCamelCaseSpacing);
   const withoutEdition = normalized
     .replace(/\b(?:demo|playtest|prologue|early access|full release)\b/g, ' ')
     .replace(/\s+/g, ' ')
@@ -193,6 +195,14 @@ function extractTitleCandidates(title = '') {
 function phraseIncludes(haystack, phrase) {
   if (!haystack || !phrase) return false;
   return ` ${haystack} `.includes(` ${phrase} `);
+}
+
+function titleLooksLikeMultiGameArchive(title = '', matchedSegments = []) {
+  const value = String(title);
+  if (!value.includes('|') || !/\bstreams?\b/i.test(value)) return false;
+  const primarySegment = value.split(/\s+\|\s+/)[0].trim();
+  if (!matchedSegments.includes(primarySegment)) return false;
+  return /,\s+|\s+(?:and|&|\+)\s+|\.{2,}/i.test(primarySegment);
 }
 
 function chooseCanonicalName(candidates, fallback) {
@@ -298,10 +308,15 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
   const signals = videos.map(video => {
     const description = video.description || video.descriptionSnippet || '';
     const extractedSteam = extractSteamCandidates(description);
-    if (video.steamAppId && !extractedSteam.some(item => item.steamAppId === String(video.steamAppId))) {
+    const previousDirectGame = ['steam', 'steam+curated'].includes(video.gameSource)
+      ? existingBySlug.get(video.gameSlug)
+      : null;
+    const recoveredSteamAppId = video.steamAppId || previousDirectGame?.steamAppId;
+    const recoveredSteamUrl = video.steamUrl || previousDirectGame?.steamUrl;
+    if (recoveredSteamAppId && !extractedSteam.some(item => item.steamAppId === String(recoveredSteamAppId))) {
       extractedSteam.push({
-        steamAppId: String(video.steamAppId),
-        steamUrl: video.steamUrl || `https://store.steampowered.com/app/${video.steamAppId}/`,
+        steamAppId: String(recoveredSteamAppId),
+        steamUrl: recoveredSteamUrl || `https://store.steampowered.com/app/${recoveredSteamAppId}/`,
         names: isPlausibleGameName(video.game) ? [video.game] : [],
         descriptionNames: [],
         pathNames: []
@@ -352,7 +367,18 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
       diagnostics.steamAppConflicts.push({ steamAppId: appId, slugs: manualSlugs });
     }
     const curatedForApp = curationGames.find(game => String(game.steamAppId || '') === appId);
-    const existing = existingByApp.get(appId);
+    const existingCandidate = existingByApp.get(appId);
+    const existingCuration = existingCandidate ? curationBySlug.get(existingCandidate.slug) : null;
+    const existingHasCuratedConflict = existingCuration
+      && String(existingCuration.steamAppId || '') !== appId;
+    const existing = existingHasCuratedConflict ? null : existingCandidate;
+    if (existingHasCuratedConflict) {
+      diagnostics.steamAppConflicts.push({
+        steamAppId: appId,
+        slugs: [existingCandidate.slug, `steam-${appId}`],
+        reason: 'Existing Steam mapping conflicts with curated game metadata.'
+      });
+    }
     const slug = curatedForApp?.slug || manualSlugs[0] || existing?.slug || `steam-${appId}`;
     if (curatedForApp?.name) group.candidates.push({ name: curatedForApp.name, weight: 1000 });
     if (existing?.name) group.candidates.push({ name: existing.name, weight: 25 });
@@ -372,9 +398,11 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
 
   function resolveName(name) {
     const aliases = aliasesForName(name);
+    const exactKeys = new Set(aliases.flatMap(alias => [alias, alias.replace(/^the\s+/, '')]));
     const hits = [];
     for (const identity of identities.values()) {
-      if (aliases.some(alias => identity.aliases.has(alias))) hits.push(identity);
+      const identityKeys = [...identity.aliases].flatMap(alias => [alias, alias.replace(/^the\s+/, '')]);
+      if (identityKeys.some(alias => exactKeys.has(alias))) hits.push(identity);
     }
     return hits.length === 1 ? hits[0] : null;
   }
@@ -392,12 +420,13 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
     const steam = signal.steam.length === 1 ? signal.steam[0] : null;
     if (signal.manual.gameSlug) {
       const curated = curationBySlug.get(signal.manual.gameSlug) || existingBySlug.get(signal.manual.gameSlug) || {};
+      const currentIdentity = identities.get(signal.manual.gameSlug) || {};
       const identity = ensureIdentity(signal.manual.gameSlug, {
         ...preservedMetadata(curated),
         name: signal.manual.game || curated.name || signal.manual.gameSlug,
         genres: signal.manual.genres || curated.genres || [],
-        steamAppId: steam?.steamAppId || curated.steamAppId || null,
-        steamUrl: steam?.steamUrl || curated.steamUrl || null
+        steamAppId: steam?.steamAppId || curated.steamAppId || currentIdentity.steamAppId || null,
+        steamUrl: steam?.steamUrl || curated.steamUrl || currentIdentity.steamUrl || null
       });
       if (steam) appToSlug.set(steam.steamAppId, identity.slug);
       assign(signal, identity, steam ? 'steam+curated' : signal.manual.source, ['manual mapping']);
@@ -424,12 +453,23 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
     }
   }
 
+  // Tags frequently contain platforms, publishers, creators, genres, and stale
+  // metadata copied from unrelated uploads. Only learn a tag as an alias when
+  // it actually contains a trusted alias for the assigned game. Uniqueness in
+  // the currently identified corpus is not enough: a tag such as "ps4" can be
+  // unique to one seeded game and then contaminate every unrelated PS4 video.
+  const trustedAliasesBySlug = new Map(
+    [...identities].map(([slug, identity]) => [slug, new Set(identity.aliases)])
+  );
   const tagStats = new Map();
   for (const signal of signals.filter(item => item.assignment)) {
     const seen = new Set();
+    const trustedAliases = trustedAliasesBySlug.get(signal.assignment.slug) || new Set();
     for (const tag of signal.video.tags || []) {
       for (const alias of tagAliases(tag)) {
         if (seen.has(alias)) continue;
+        const belongsToAssignedGame = [...trustedAliases].some(trustedAlias => phraseIncludes(alias, trustedAlias));
+        if (!belongsToAssignedGame) continue;
         seen.add(alias);
         const stat = tagStats.get(alias) || new Map();
         stat.set(signal.assignment.slug, (stat.get(signal.assignment.slug) || 0) + 1);
@@ -496,14 +536,15 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
       candidates.set(slug, candidate);
     }
 
-    const normalizedTitle = normalizeText(signal.video.title);
+    const titleSegments = String(signal.video.title).split(/\s+(?:\||::)\s+/).filter(Boolean);
+    const normalizedTitleSegments = titleSegments.map(normalizeText);
     const normalizedDescription = normalizeText(signal.description.slice(0, 900));
     const titleKeys = new Set(signal.titleCandidates.map(normalizeText));
 
     for (const [alias, slugs] of aliasIndex) {
       if (titleKeys.has(alias)) {
         for (const slug of slugs) addCandidate(slug, 96, `title segment “${alias}”`, 'title');
-      } else if (phraseIncludes(normalizedTitle, alias)) {
+      } else if (normalizedTitleSegments.some(segment => phraseIncludes(segment, alias))) {
         const specificity = Math.min(4, Math.max(0, alias.split(' ').length - 1));
         for (const slug of slugs) addCandidate(slug, 92 + specificity, `title contains “${alias}”`, 'title');
       } else if (alias.length >= 8 && phraseIncludes(normalizedDescription, alias)) {
@@ -538,12 +579,19 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
     }
     const ranked = [...candidates.values()].sort((a, b) => b.score - a.score || a.slug.localeCompare(b.slug));
     const top = ranked[0];
-    const second = ranked[1];
+    const closeRivals = top ? ranked.slice(1).filter(candidate => top.score - candidate.score < 8) : [];
     const topName = top ? normalizeText(identities.get(top.slug)?.name) : '';
-    const secondName = second ? normalizeText(identities.get(second.slug)?.name) : '';
-    const specificDominance = top && second && top.score > second.score
-      && (phraseIncludes(topName, secondName) || phraseIncludes(secondName, topName));
-    if (top && top.score >= 82 && (!second || top.score - second.score >= 8 || specificDominance)) {
+    const specificDominance = top && closeRivals.length > 0 && closeRivals.every(rival => {
+      const rivalName = normalizeText(identities.get(rival.slug)?.name);
+      return top.score > rival.score && (phraseIncludes(topName, rivalName) || phraseIncludes(rivalName, topName));
+    });
+    const matchedTitleSegments = top
+      ? titleSegments.filter(segment => [...(identities.get(top.slug)?.aliases || [])]
+        .some(alias => phraseIncludes(normalizeText(segment), alias)))
+      : [];
+    const multiGameTitle = top?.types.size === 1 && top.types.has('title')
+      && titleLooksLikeMultiGameArchive(signal.video.title, matchedTitleSegments);
+    if (top && top.score >= 82 && !multiGameTitle && (!closeRivals.length || specificDominance)) {
       const source = top.types.has('title') && top.types.has('tags') ? 'metadata' : (top.types.has('title') ? 'title' : 'tags');
       assign(signal, identities.get(top.slug), source, top.reasons);
     } else if (top && top.score >= 70) {
@@ -552,6 +600,7 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
         title: signal.video.title,
         publishedAt: signal.video.publishedAt,
         views: Number(signal.video.views || 0),
+        reason: multiGameTitle ? 'Multiple games appear in one title; no single-game mapping was forced.' : undefined,
         candidates: ranked.slice(0, 5).map(candidate => ({
           slug: candidate.slug,
           name: identities.get(candidate.slug)?.name || candidate.slug,
@@ -583,6 +632,10 @@ function buildCatalog({ videos = [], curationGames = [], existingGames = [], rul
     video.gameSource = assignment.source;
     video.gameConfidence = assignment.confidence;
     video.gameEvidence = assignment.reasons;
+    if (['steam', 'steam+curated'].includes(assignment.source) && identity.steamAppId) {
+      video.steamAppId = String(identity.steamAppId);
+      video.steamUrl = identity.steamUrl || `https://store.steampowered.com/app/${identity.steamAppId}/`;
+    }
     video.genres = signal.manual.genres?.length ? signal.manual.genres : (identity.genres || []);
     video.series = signal.manual.series || video.series || null;
     outputVideos.push(video);
