@@ -3,9 +3,11 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { buildCatalog } = require('./lib/game-catalog');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
+const REPORTS = path.join(ROOT, 'reports');
 const API = 'https://www.googleapis.com/youtube/v3';
 const API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_HANDLE = process.env.YOUTUBE_CHANNEL_HANDLE || '@OlexaYT';
@@ -54,85 +56,6 @@ function chooseThumbnail(thumbnails = {}) {
   return (thumbnails.maxres || thumbnails.standard || thumbnails.high || thumbnails.medium || thumbnails.default || {}).url || null;
 }
 
-function cleanGameName(value = '') {
-  return value
-    .replace(/https?:\/\/\S+/g, '')
-    .replace(/[|•]+$/g, '')
-    .replace(/\s+/g, ' ')
-    .replace(/^[\s:–—-]+|[\s:–—-]+$/g, '')
-    .trim();
-}
-
-function nameFromSteamPath(pathname = '') {
-  try {
-    const parts = decodeURIComponent(pathname).split('/').filter(Boolean);
-    const appIndex = parts.findIndex(x => x === 'app');
-    const slug = appIndex >= 0 ? parts[appIndex + 2] : '';
-    return cleanGameName((slug || '').replace(/_/g, ' '));
-  } catch {
-    return '';
-  }
-}
-
-function extractSteam(description = '') {
-  const regex = /https?:\/\/(?:store\.)?steampowered\.com\/app\/(\d+)(?:\/[^\s?#]*)?/ig;
-  const match = regex.exec(description);
-  if (!match) return null;
-
-  const appId = match[1];
-  const steamUrl = `https://store.steampowered.com/app/${appId}/`;
-  const before = description.slice(Math.max(0, match.index - 260), match.index);
-  const patterns = [
-    /check\s+out\s+([^\n\r]{1,120}?)\s+here!?\s*$/i,
-    /check\s+out\s+([^\n\r]{1,120}?)\s+on\s+steam!?\s*$/i,
-    /play\s+([^\n\r]{1,120}?)\s+here!?\s*$/i
-  ];
-  let name = '';
-  for (const pattern of patterns) {
-    const m = before.match(pattern);
-    if (m?.[1]) { name = cleanGameName(m[1]); break; }
-  }
-
-  if (!name) {
-    try { name = nameFromSteamPath(new URL(match[0]).pathname); }
-    catch { name = ''; }
-  }
-
-  if (!name) name = `Steam App ${appId}`;
-  return { steamAppId: appId, steamUrl, gameName: name };
-}
-
-function manualClassification(raw, games, rules, overrides) {
-  const override = overrides[raw.id] || {};
-  if (override.hide) return { hide: true };
-  const gameBySlug = new Map(games.map(g => [g.slug, g]));
-
-  let slug = override.gameSlug || null;
-  let source = slug ? 'override' : null;
-  if (!slug) {
-    const haystack = [raw.snippet.title, raw.snippet.description, ...(raw.snippet.tags || [])].join('\n').toLowerCase();
-    let best = null;
-    for (const rule of rules) {
-      const hits = (rule.any || []).filter(term => haystack.includes(String(term).toLowerCase()));
-      if (!hits.length) continue;
-      const score = Math.max(...hits.map(x => String(x).length)) + hits.length * 3;
-      if (!best || score > best.score) best = { slug: rule.gameSlug, score };
-    }
-    slug = best?.slug || null;
-    if (slug) source = 'rule';
-  }
-
-  const game = slug ? gameBySlug.get(slug) : null;
-  return {
-    gameSlug: slug,
-    game: override.game || game?.name || null,
-    genres: override.genres || game?.genres || [],
-    series: override.series || null,
-    source,
-    hide: false
-  };
-}
-
 async function main() {
   console.log(`Resolving YouTube channel ${CHANNEL_HANDLE}…`);
   const channelResponse = await api('channels', {
@@ -172,48 +95,11 @@ async function main() {
   process.stdout.write('\n');
 
   const gamesData = readJSON('games.json', { games: [] });
+  const curationData = readJSON('game-curation.json', { games: [] });
   const rulesData = readJSON('game-rules.json', { rules: [] });
   const overridesData = readJSON('video-overrides.json', { overrides: {} });
-  const games = gamesData.games || [];
-  const rules = rulesData.rules || [];
-  const overrides = overridesData.overrides || {};
-  const gameBySlug = new Map(games.map(g => [g.slug, g]));
-
-  // First pass: if a manually-known game has a Steam link, remember that App ID.
-  // That lets other episodes of the same game inherit the curated slug automatically.
-  const steamToManualSlug = new Map();
-  for (const raw of rawVideos) {
-    const manual = manualClassification(raw, games, rules, overrides);
-    const steam = extractSteam(raw.snippet.description || '');
-    if (!manual.hide && manual.gameSlug && steam?.steamAppId) {
-      steamToManualSlug.set(steam.steamAppId, manual.gameSlug);
-    }
-  }
-
-  const videos = rawVideos.map(raw => {
-    const manual = manualClassification(raw, games, rules, overrides);
-    if (manual.hide) return null;
-
-    const steam = extractSteam(raw.snippet.description || '');
-    let gameSlug = manual.gameSlug;
-    let game = manual.game;
-    let genres = manual.genres || [];
-    let gameSource = manual.source;
-
-    if (!gameSlug && steam?.steamAppId && steamToManualSlug.has(steam.steamAppId)) {
-      gameSlug = steamToManualSlug.get(steam.steamAppId);
-      const curated = gameBySlug.get(gameSlug);
-      game = curated?.name || steam.gameName;
-      genres = curated?.genres || [];
-      gameSource = 'steam+curated';
-    } else if (!gameSlug && steam?.steamAppId) {
-      gameSlug = `steam-${steam.steamAppId}`;
-      game = steam.gameName;
-      gameSource = 'steam';
-    }
-
-    if (gameSlug && !game) game = gameBySlug.get(gameSlug)?.name || steam?.gameName || null;
-
+  const generatedAt = new Date().toISOString();
+  const baseVideos = rawVideos.map(raw => {
     const stats = raw.statistics || {};
     return {
       id: raw.id,
@@ -224,22 +110,28 @@ async function main() {
       likes: Number(stats.likeCount || 0),
       comments: Number(stats.commentCount || 0),
       durationSeconds: isoDurationToSeconds(raw.contentDetails?.duration),
-      game,
-      gameSlug,
-      gameSource,
-      genres,
-      series: manual.series || null,
-      steamAppId: steam?.steamAppId || null,
-      steamUrl: steam?.steamUrl || null,
+      game: null,
+      gameSlug: null,
+      gameSource: null,
+      genres: [],
+      series: null,
+      steamAppId: null,
+      steamUrl: null,
       tags: raw.snippet.tags || [],
+      description: raw.snippet.description || '',
       descriptionSnippet: (raw.snippet.description || '').replace(/\s+/g, ' ').trim().slice(0, 420),
       url: `https://www.youtube.com/watch?v=${raw.id}`
     };
-  }).filter(Boolean).sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  });
 
-  const assigned = videos.filter(v => v.gameSlug).length;
-  const steamDetected = videos.filter(v => v.steamAppId).length;
-  const uniqueGames = new Set(videos.filter(v => v.gameSlug).map(v => v.gameSlug)).size;
+  const result = buildCatalog({
+    videos: baseVideos,
+    curationGames: curationData.games || [],
+    existingGames: gamesData.games || [],
+    rules: rulesData.rules || [],
+    overrides: overridesData.overrides || {},
+    generatedAt
+  });
 
   const output = {
     channel: {
@@ -250,23 +142,24 @@ async function main() {
       thumbnail: chooseThumbnail(channel.snippet.thumbnails),
       subscribers: Number(channel.statistics?.subscriberCount || 0),
       channelViews: Number(channel.statistics?.viewCount || 0),
-      videoCount: Number(channel.statistics?.videoCount || videos.length),
+      videoCount: Number(channel.statistics?.videoCount || result.videos.length),
       uploadsPlaylist,
-      syncedAt: new Date().toISOString(),
+      syncedAt: generatedAt,
       source: 'youtube-data-api-v3'
     },
-    catalog: {
-      identifiedVideos: assigned,
-      steamLinkedVideos: steamDetected,
-      uniqueGames
-    },
-    videos
+    catalog: result.catalog,
+    videos: result.videos
   };
 
   writeJSON('videos.json', output);
-  console.log(`Done. Wrote ${videos.length} public videos to data/videos.json.`);
-  console.log(`Games identified: ${assigned}/${videos.length} (${videos.length ? Math.round(assigned / videos.length * 100) : 0}%).`);
-  console.log(`Steam links found: ${steamDetected}/${videos.length} · unique game records: ${uniqueGames}.`);
+  writeJSON('games.json', result.gamesFile);
+  writeJSON('game-audit.json', result.audit);
+  fs.mkdirSync(REPORTS, { recursive: true });
+  fs.writeFileSync(path.join(REPORTS, 'data-quality.md'), result.report);
+  console.log(`Done. Wrote ${result.videos.length} public videos to data/videos.json.`);
+  console.log(`Games identified: ${result.catalog.identifiedVideos}/${result.videos.length} (${result.catalog.coveragePercent}%).`);
+  console.log(`Steam links found: ${result.catalog.steamLinkedVideos}/${result.videos.length} · canonical games: ${result.catalog.uniqueGames}.`);
+  console.log(`Audit: ${result.audit.summary.ambiguousVideos} ambiguous · ${result.audit.summary.unidentifiedVideos} unidentified.`);
 }
 
 main().catch(err => {

@@ -36,45 +36,25 @@ const OlexaArchive = (() => {
     return item?.steamUrl || (item?.steamAppId ? `https://store.steampowered.com/app/${item.steamAppId}/` : null);
   }
 
-  function deriveGames(videos = [], curatedGames = []) {
-    const bySlug = new Map();
-    for (const curated of curatedGames) {
-      bySlug.set(curated.slug, { ...curated, videos: [], videoCount: 0, totalViews: 0 });
-    }
-
-    for (const video of videos) {
-      if (!video.gameSlug) continue;
-      let game = bySlug.get(video.gameSlug);
-      if (!game) {
-        game = {
-          slug: video.gameSlug,
-          name: video.game || `Steam App ${video.steamAppId || ''}`.trim(),
-          genres: video.genres || [],
-          steamAppId: video.steamAppId || null,
-          steamUrl: steamUrl(video),
-          source: video.gameSource || 'youtube',
-          videos: [],
-          videoCount: 0,
-          totalViews: 0
-        };
-        bySlug.set(video.gameSlug, game);
-      }
-      if (!game.steamAppId && video.steamAppId) game.steamAppId = video.steamAppId;
-      if (!game.steamUrl && steamUrl(video)) game.steamUrl = steamUrl(video);
-      if ((!game.genres || !game.genres.length) && video.genres?.length) game.genres = video.genres;
-      if ((!game.name || /^Steam App /.test(game.name)) && video.game) game.name = video.game;
-      game.videos.push(video);
-      game.videoCount += 1;
-      game.totalViews += Number(video.views) || 0;
-    }
-
-    for (const game of bySlug.values()) {
-      const dates = game.videos.map(v => new Date(v.publishedAt)).filter(d => !Number.isNaN(d.valueOf())).sort((a, b) => a - b);
-      game.firstPlayedAt = dates[0]?.toISOString() || null;
-      game.lastPlayedAt = dates.at(-1)?.toISOString() || null;
-      game.latestVideo = game.videos.slice().sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))[0] || null;
-    }
-    return [...bySlug.values()].filter(g => g.videoCount > 0);
+  function hydrateGames(videos = [], canonicalGames = []) {
+    const videoById = new Map(videos.map(video => [video.id, video]));
+    return canonicalGames.map(record => {
+      const assigned = record.videoIds?.length
+        ? record.videoIds.map(id => videoById.get(id)).filter(Boolean)
+        : videos.filter(video => video.gameSlug === record.slug);
+      const latest = videoById.get(record.latestVideo?.id)
+        || record.latestVideo
+        || assigned.slice().sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))[0]
+        || null;
+      return {
+        ...record,
+        videos: assigned,
+        videoCount: Number(record.videoCount ?? assigned.length),
+        totalViews: Number(record.totalViews ?? assigned.reduce((sum, video) => sum + Number(video.views || 0), 0)),
+        totalDurationSeconds: Number(record.totalDurationSeconds ?? assigned.reduce((sum, video) => sum + Number(video.durationSeconds || 0), 0)),
+        latestVideo: latest
+      };
+    }).filter(game => game.videoCount > 0);
   }
 
   function renderVideoCard(video, template) {
@@ -141,5 +121,5 @@ const OlexaArchive = (() => {
     const d = document.createElement('div'); d.textContent = value; return d.innerHTML;
   }
 
-  return { loadJSON, compactNumber, formatDuration, youtubeUrl, gameUrl, gameName, steamUrl, deriveGames, renderVideoCard, sortVideos, randomItem, watch, escapeHTML };
+  return { loadJSON, compactNumber, formatDuration, youtubeUrl, gameUrl, gameName, steamUrl, hydrateGames, renderVideoCard, sortVideos, randomItem, watch, escapeHTML };
 })();

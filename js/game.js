@@ -7,7 +7,7 @@
       const [videoData, gameData] = await Promise.all([OlexaArchive.loadJSON('data/videos.json'), OlexaArchive.loadJSON('data/games.json')]);
       const allVideos = Array.isArray(videoData) ? videoData : (videoData.videos || []);
       const curated = Array.isArray(gameData) ? gameData : (gameData.games || []);
-      const allGames = OlexaArchive.deriveGames(allVideos, curated);
+      const allGames = OlexaArchive.hydrateGames(allVideos, curated);
       const game = allGames.find(g => g.slug === slug);
       if (!game) throw new Error('No videos are currently catalogued for this game.');
       const videos = game.videos;

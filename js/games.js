@@ -7,7 +7,7 @@
     Object.assign(els, { search: document.querySelector('#gameSearch'), sort: document.querySelector('#gameLibrarySort'), grid: document.querySelector('#gameLibraryGrid'), count: document.querySelector('#gameLibraryCount'), steamOnly: document.querySelector('#steamOnly') });
     const [videoData, gameData] = await Promise.all([OlexaArchive.loadJSON('data/videos.json'), OlexaArchive.loadJSON('data/games.json')]);
     const videos = Array.isArray(videoData) ? videoData : (videoData.videos || []);
-    games = OlexaArchive.deriveGames(videos, Array.isArray(gameData) ? gameData : (gameData.games || []));
+    games = OlexaArchive.hydrateGames(videos, Array.isArray(gameData) ? gameData : (gameData.games || []));
     els.search.addEventListener('input', render); els.sort.addEventListener('change', render); els.steamOnly.addEventListener('change', render);
     render();
   }

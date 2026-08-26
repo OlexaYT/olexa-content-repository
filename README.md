@@ -14,6 +14,9 @@ A zero-database, GitHub-Pages-friendly archive for the Olexa YouTube channel.
 - Random year time machine
 - Community Museum scaffold
 - YouTube Data API v3 importer
+- Layered game identification from Steam App IDs, description calls-to-action, titles, and tag families
+- Persistent canonical game records with aggregate Olexa coverage statistics
+- Data-quality audit queues for unidentified, ambiguous, malformed, and duplicate mappings
 - Game classification rules + per-video manual overrides
 - GitHub Actions scheduled sync every 6 hours
 - GitHub Pages deployment workflows
@@ -61,7 +64,12 @@ The importer defaults to the `@OlexaYT` handle and resolves the channel through 
 npm run sync
 ```
 
-That replaces `data/videos.json` with the real public channel archive.
+That refreshes the public channel archive and rebuilds all generated catalog artifacts:
+
+- `data/videos.json` — video records and game assignments
+- `data/games.json` — canonical game records and aggregate statistics
+- `data/game-audit.json` — full machine-readable review queues
+- `reports/data-quality.md` — human-readable coverage and audit report
 
 Then refresh the local site:
 
@@ -105,18 +113,23 @@ Overrides always beat automatic matching.
 
 ### Game metadata
 
-Edit `data/games.json` to define the canonical name, genres, Steam link, and optional description:
+Edit `data/game-curation.json` to define a canonical name, genres, Steam App ID, Steam link, or optional description:
 
 ```json
 {
   "slug": "mosa-lina",
   "name": "Mosa Lina",
   "genres": ["Puzzle", "Physics"],
-  "steam": "https://store.steampowered.com/..."
+  "steamAppId": "2477090",
+  "steamUrl": "https://store.steampowered.com/app/2477090/"
 }
 ```
 
-Run `npm run sync` again after changing rules.
+`data/games.json` is generated; do not hand-edit it. Run `npm run catalog` after changing curation, rules, or overrides. The command reclassifies the checked-in archive without using YouTube API quota. Run `npm run sync` when you also want fresh YouTube metadata.
+
+### Review the audit
+
+Open `reports/data-quality.md` for the before/after coverage summary and the highest-priority unresolved videos. The complete queues and candidate evidence live in `data/game-audit.json`. Ambiguous videos stay unidentified until one candidate is clearly stronger or a manual override resolves them.
 
 ## 5. Put it on GitHub Pages
 
@@ -130,21 +143,25 @@ YOUTUBE_API_KEY
 ```
 
 5. Paste the API key as the secret value.
-6. Open **Actions → Sync YouTube Archive → Run workflow** once.
+6. Open **Actions → Sync YouTube + Deploy Pages → Run workflow** once.
 
 After that:
 
 - normal pushes deploy the site;
 - the YouTube sync runs every 6 hours;
-- the sync commits refreshed `data/videos.json` back into the repo;
+- the sync verifies and commits the refreshed video archive, canonical games, and audit report;
 - the same workflow immediately publishes the refreshed site.
 
 ## Useful commands
 
 ```powershell
 npm run dev       # local website
-npm run sync      # pull YouTube and rebuild videos.json
+npm run sync      # pull YouTube and rebuild all catalog data
+npm run catalog   # rebuild catalog data from checked-in videos
 npm run check     # syntax-check all JavaScript
+npm test          # run Data Quality V2 tests
+npm run validate  # verify generated game/video references and totals
+npm run verify    # run syntax checks, tests, and data validation
 ```
 
 ## Important secret rule

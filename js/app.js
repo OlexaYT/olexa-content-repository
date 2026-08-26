@@ -18,7 +18,7 @@
       const [videoData, gameData] = await Promise.all([OlexaArchive.loadJSON('data/videos.json'), OlexaArchive.loadJSON('data/games.json')]);
       state.videos = Array.isArray(videoData) ? videoData : (videoData.videos || []);
       state.channel = Array.isArray(videoData) ? {} : (videoData.channel || {});
-      state.games = OlexaArchive.deriveGames(state.videos, Array.isArray(gameData) ? gameData : (gameData.games || []));
+      state.games = OlexaArchive.hydrateGames(state.videos, Array.isArray(gameData) ? gameData : (gameData.games || []));
       hydrateVideoMetadata(); buildControls(); renderDiscovery(); bindEvents(); readQuery(); applyFilters();
     } catch (err) {
       console.error(err);
