@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T22:35:52.683Z",
+  "generatedAt": "2026-09-10T01:07:31.379Z",
   "summary": {
     "totalVideos": 6259,
     "beforeIdentifiedVideos": 3105,
@@ -30,7 +30,7 @@
       "id": "LIsF0Ln8djg",
       "title": "101 Facts and Tips for The Binding of Isaac: Afterbirth+",
       "publishedAt": "2018-05-19T16:00:01Z",
-      "views": 822355,
+      "views": 822352,
       "candidates": [
         {
           "slug": "binding-of-isaac-afterbirth",
@@ -63,7 +63,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 606589,
+      "views": 606599,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -118,7 +118,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 581563,
+      "views": 581566,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -224,7 +224,7 @@
       "id": "Tw4-1FQbrfM",
       "title": "The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]",
       "publishedAt": "2021-10-23T17:00:16Z",
-      "views": 431152,
+      "views": 431156,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -393,7 +393,7 @@
       "id": "gp76eqyDlxs",
       "title": "Every Time I Get Hit, the Roguelike Changes through History",
       "publishedAt": "2023-11-05T16:00:33Z",
-      "views": 212922,
+      "views": 212923,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -661,7 +661,7 @@
       "id": "j3Oa3ClY7nc",
       "title": "RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...",
       "publishedAt": "2021-06-26T17:00:20Z",
-      "views": 91451,
+      "views": 91453,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -700,7 +700,7 @@
       "id": "jayeMzegTCA",
       "title": "😅",
       "publishedAt": "2026-06-18T11:11:03Z",
-      "views": 75112,
+      "views": 75114,
       "candidates": [
         {
           "slug": "steam-3618850",
@@ -751,7 +751,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 59443,
+      "views": 59445,
       "candidates": [
         {
           "slug": "steam-2379780",
@@ -1344,7 +1344,7 @@
       "id": "tMaJAUQLcpo",
       "title": "NEVER BEFORE SEEN SECRET FLOOR! :: In Depth Isaac: Secret Floor",
       "publishedAt": "2018-01-29T18:00:03Z",
-      "views": 25573,
+      "views": 25574,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -2498,7 +2498,7 @@
       "id": "PIG1m58IPYo",
       "title": "INFINITE DAMAGE! ALL ABOUT SUCCUBUS! :: In Depth Isaac: Succubus",
       "publishedAt": "2018-01-28T18:00:01Z",
-      "views": 11366,
+      "views": 11365,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -4665,7 +4665,7 @@
       "id": "bL5HaL-owJE",
       "title": "Brotato is in The Binding of Isaac?!",
       "publishedAt": "2022-12-02T19:00:22Z",
-      "views": 5587,
+      "views": 5589,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -10863,6 +10863,23 @@
       ]
     },
     {
+      "id": "f6btc66ydZA",
+      "title": "Mod Spotlight - Carpenter's Blocks",
+      "publishedAt": "2014-07-07T23:20:38Z",
+      "views": 458,
+      "candidates": [
+        {
+          "slug": "minecraft",
+          "name": "Minecraft",
+          "score": 81,
+          "reasons": [
+            "tag family “minecraft”",
+            "tag names “minecraft”"
+          ]
+        }
+      ]
+    },
+    {
       "id": "b4wAicOx8YA",
       "title": "Spelunky 2, Teardown, Among Us with Subs! |  November 14th, 2020 Stream",
       "publishedAt": "2021-01-13T20:00:06Z",
@@ -10917,23 +10934,6 @@
           "score": 78,
           "reasons": [
             "tag names “loot rascals”"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "f6btc66ydZA",
-      "title": "Mod Spotlight - Carpenter's Blocks",
-      "publishedAt": "2014-07-07T23:20:38Z",
-      "views": 457,
-      "candidates": [
-        {
-          "slug": "minecraft",
-          "name": "Minecraft",
-          "score": 81,
-          "reasons": [
-            "tag family “minecraft”",
-            "tag names “minecraft”"
           ]
         }
       ]
@@ -21145,7 +21145,7 @@
       "id": "LIsF0Ln8djg",
       "title": "101 Facts and Tips for The Binding of Isaac: Afterbirth+",
       "publishedAt": "2018-05-19T16:00:01Z",
-      "views": 822355,
+      "views": 822352,
       "tags": [
         "facts about isaac",
         "isaac facts",
@@ -21166,7 +21166,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 606589,
+      "views": 606599,
       "tags": [
         "olexa",
         "roguelike",
@@ -21187,7 +21187,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 581563,
+      "views": 581566,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21271,7 +21271,7 @@
       "id": "Tw4-1FQbrfM",
       "title": "The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]",
       "publishedAt": "2021-10-23T17:00:16Z",
-      "views": 431152,
+      "views": 431156,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21313,7 +21313,7 @@
       "id": "oqfKhyP1Wdk",
       "title": "I Made Roguelike Lockout Bingo, Except There’s a Twist…",
       "publishedAt": "2025-08-24T17:00:58Z",
-      "views": 319974,
+      "views": 320096,
       "tags": [
         "olexa",
         "lockout bingo",
@@ -21418,7 +21418,7 @@
       "id": "gp76eqyDlxs",
       "title": "Every Time I Get Hit, the Roguelike Changes through History",
       "publishedAt": "2023-11-05T16:00:33Z",
-      "views": 212922,
+      "views": 212923,
       "tags": [
         "olexa",
         "best roguelike games 2023",
@@ -21502,7 +21502,7 @@
       "id": "1ZGM_kbnabY",
       "title": "The ONLY Overwhelmingly Positive Deckbuilding Roguelikes",
       "publishedAt": "2024-06-24T16:00:04Z",
-      "views": 154459,
+      "views": 154460,
       "tags": [
         "olexa",
         "best roguelike games",
@@ -21584,7 +21584,7 @@
       "id": "koxMgiQhZf4",
       "title": "WHAT IS A ROGUELIKE? [Roguelike vs Roguelite]",
       "publishedAt": "2018-07-14T17:00:02Z",
-      "views": 112438,
+      "views": 112440,
       "tags": [
         "roguelike",
         "roguelite",
@@ -21599,7 +21599,7 @@
       "id": "au9CptSolpI",
       "title": "Roguelike Deckbuilding... Tetris?",
       "publishedAt": "2025-01-23T16:00:03Z",
-      "views": 105941,
+      "views": 105947,
       "tags": [
         "olexa",
         "drop duchy",
@@ -21718,7 +21718,7 @@
       "id": "j3Oa3ClY7nc",
       "title": "RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...",
       "publishedAt": "2021-06-26T17:00:20Z",
-      "views": 91451,
+      "views": 91453,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21749,7 +21749,7 @@
       "id": "ImfjWGcKC4U",
       "title": "The BEST Top Down Shooter Roguelike in Years",
       "publishedAt": "2025-03-11T15:00:32Z",
-      "views": 87666,
+      "views": 87673,
       "tags": [
         "olexa",
         "odinfall game",
@@ -21770,7 +21770,7 @@
       "id": "Y46lOOD-20E",
       "title": "EVERYTHING TO KNOW ABOUT EDEN! :: In Depth Isaac :: 2",
       "publishedAt": "2017-09-23T18:55:23Z",
-      "views": 83634,
+      "views": 83636,
       "tags": [
         "video",
         "games",
@@ -21856,7 +21856,7 @@
       "id": "jayeMzegTCA",
       "title": "😅",
       "publishedAt": "2026-06-18T11:11:03Z",
-      "views": 75112,
+      "views": 75114,
       "tags": [
         "olexa",
         "Pronoun palace",
@@ -21907,7 +21907,7 @@
       "id": "bcUNM9U4Uug",
       "title": "This INSANE Plants vs. Zombies Mod Shocked Me",
       "publishedAt": "2025-10-22T16:01:12Z",
-      "views": 70531,
+      "views": 70535,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -21968,7 +21968,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 59443,
+      "views": 59445,
       "tags": [
         "olexa",
         "runeborn",
@@ -22010,7 +22010,7 @@
       "id": "iybVcN31EiI",
       "title": "The Rise of “Gambling” Roguelikes",
       "publishedAt": "2025-06-15T16:01:10Z",
-      "views": 56939,
+      "views": 56938,
       "tags": [
         "olexa",
         "slot machine roguelike",
@@ -22115,7 +22115,7 @@
       "id": "mVAmApW560g",
       "title": "The Best Gambling Roguelike is FINALLY HERE! #ad",
       "publishedAt": "2024-08-05T18:00:34Z",
-      "views": 51478,
+      "views": 51483,
       "tags": [
         "olexa",
         "dungeons and degenerate gamblers",
@@ -22136,7 +22136,7 @@
       "id": "xcjyFJOQ0ho",
       "title": "A Deckbuilding Roguelike All About Killing Your Own Cards (and pie)",
       "publishedAt": "2025-08-07T17:22:11Z",
-      "views": 51075,
+      "views": 51083,
       "tags": [
         "olexa",
         "the royal writ",
@@ -22325,7 +22325,7 @@
       "id": "v1Kqb6SU_gE",
       "title": "Yeah, I'm Playing Plants vs. Zombies Fan Games in 2025",
       "publishedAt": "2025-10-24T17:13:36Z",
-      "views": 41348,
+      "views": 41349,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -22468,7 +22468,7 @@
       "id": "izACIo-Qin4",
       "title": "The Blade gun is SOOO good! #olexa #roguelike #roguelite #games #shotgunking",
       "publishedAt": "2023-02-01T23:00:21Z",
-      "views": 32024,
+      "views": 32026,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=izACIo-Qin4"
     },
@@ -22560,7 +22560,7 @@
       "id": "LXvydd5gWAs",
       "title": "The Dicebuilding Roguelike Where You BET BIG or... burn",
       "publishedAt": "2025-10-10T16:00:40Z",
-      "views": 30455,
+      "views": 30456,
       "tags": [
         "olexa",
         "dicealot game",
@@ -22641,7 +22641,7 @@
       "id": "d84g4fO-HVc",
       "title": "I Asked For Help, and 5000 of You Answered",
       "publishedAt": "2026-08-24T20:00:04Z",
-      "views": 29020,
+      "views": 29031,
       "tags": [
         "olexa"
       ],
@@ -22749,7 +22749,7 @@
       "id": "tMaJAUQLcpo",
       "title": "NEVER BEFORE SEEN SECRET FLOOR! :: In Depth Isaac: Secret Floor",
       "publishedAt": "2018-01-29T18:00:03Z",
-      "views": 25573,
+      "views": 25574,
       "tags": [
         "binding of isaac",
         "the binding of isaac",
@@ -22801,7 +22801,7 @@
       "id": "J-Eti47svsM",
       "title": "The Triple Squash Shooter Saves Lives",
       "publishedAt": "2025-11-06T17:00:23Z",
-      "views": 25341,
+      "views": 25343,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -23023,7 +23023,7 @@
       "id": "P3Y1HTIIYuA",
       "title": "I Destroyed the Developer of this Pokemon Roguelike",
       "publishedAt": "2026-06-16T10:54:46Z",
-      "views": 20952,
+      "views": 20953,
       "tags": [
         "olexa",
         "Pokemon",
@@ -23044,7 +23044,7 @@
       "id": "4_tFhYzFo1w",
       "title": "I'm Sacrificing Children to the Dark One in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-26T21:00:06Z",
-      "views": 20800,
+      "views": 20803,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23223,7 +23223,7 @@
       "id": "dy8-PhCg7yg",
       "title": "Getting My Feet Wet and My Hands Dirty in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-04T17:01:12Z",
-      "views": 19000,
+      "views": 19001,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23349,7 +23349,7 @@
       "id": "-2xUvaj2Rjw",
       "title": "Boardgames are Roguelikes… here’s why",
       "publishedAt": "2025-07-27T17:20:41Z",
-      "views": 17951,
+      "views": 17954,
       "tags": [
         "olexa",
         "roguelikes",
@@ -23391,7 +23391,7 @@
       "id": "kU-B3aKGAW4",
       "title": "I've Never Been More Excited for My Channel",
       "publishedAt": "2025-11-30T18:20:44Z",
-      "views": 17765,
+      "views": 17768,
       "tags": [
         "olexa"
       ],
@@ -23432,7 +23432,7 @@
       "id": "HvKVUTber84",
       "title": "GUILLO4N— it's just the zaratana fight",
       "publishedAt": "2026-04-17T16:00:26Z",
-      "views": 17011,
+      "views": 17013,
       "tags": [
         "olexa"
       ],
@@ -23516,7 +23516,7 @@
       "id": "7Mpt5-HnmtA",
       "title": "If You Were Concerned I Learned How to Read, Don't Worry",
       "publishedAt": "2025-12-11T20:00:07Z",
-      "views": 16405,
+      "views": 16406,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23558,7 +23558,7 @@
       "id": "G33TyVDKLl8",
       "title": "Who else up torching they wood",
       "publishedAt": "2025-11-25T20:00:14Z",
-      "views": 16373,
+      "views": 16372,
       "tags": [
         "olexa"
       ],
@@ -23908,7 +23908,7 @@
       "id": "DHe4YOqCyT0",
       "title": "1 Hour of Pain in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-18T17:00:19Z",
-      "views": 12981,
+      "views": 12983,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -24149,7 +24149,7 @@
       "id": "PIG1m58IPYo",
       "title": "INFINITE DAMAGE! ALL ABOUT SUCCUBUS! :: In Depth Isaac: Succubus",
       "publishedAt": "2018-01-28T18:00:01Z",
-      "views": 11366,
+      "views": 11365,
       "tags": [
         "brimstone",
         "the binding of isaac (video game)",
@@ -26458,7 +26458,7 @@
       "id": "bL5HaL-owJE",
       "title": "Brotato is in The Binding of Isaac?!",
       "publishedAt": "2022-12-02T19:00:22Z",
-      "views": 5587,
+      "views": 5589,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -26781,7 +26781,7 @@
       "id": "TvqwqpQ9Fkw",
       "title": "This CHARMING Free Roguelike Demo Started as a College Project",
       "publishedAt": "2023-03-11T19:00:16Z",
-      "views": 5092,
+      "views": 5094,
       "tags": [
         "olexa",
         "roguedice",
@@ -27677,7 +27677,7 @@
       "id": "w5kDNEwdoSQ",
       "title": "THE UNLUCKIEST ENDLESS NAMELESS :: Modded Isaac: Eden Streaks ::",
       "publishedAt": "2019-01-21T18:00:05Z",
-      "views": 4265,
+      "views": 4266,
       "tags": [
         "olexa",
         "modded",
@@ -28115,7 +28115,7 @@
       "id": "2JjwuewV2uE",
       "title": "Understanding Creativity in Content Creation (w/ @orbitalpotato )",
       "publishedAt": "2026-01-14T17:00:05Z",
-      "views": 3852,
+      "views": 3853,
       "tags": [
         "olexa"
       ],
@@ -28244,7 +28244,7 @@
       "id": "Px9e4rtAH74",
       "title": "The Wholesomeverse Live Charity Stream! (Puzzles / Codenames / 6 nimmt)",
       "publishedAt": "2024-12-07T22:55:23Z",
-      "views": 3654,
+      "views": 3655,
       "tags": [
         "olexa"
       ],
@@ -28880,7 +28880,7 @@
       "id": "EBU7HUmobdk",
       "title": "I swallowed a lot of glue as a kid",
       "publishedAt": "2022-10-11T02:25:24Z",
-      "views": 3354,
+      "views": 3356,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=EBU7HUmobdk"
     },
@@ -28967,7 +28967,7 @@
       "id": "NfCeJMW9g9s",
       "title": "PASSPORT = CONFISCATED :: Papers, Please :: 9",
       "publishedAt": "2018-03-10T20:00:00Z",
-      "views": 3199,
+      "views": 3200,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=NfCeJMW9g9s"
     },
@@ -29769,7 +29769,7 @@
       "id": "ksVJ2exeSN8",
       "title": "The Wholesomeverse Live Annual Holiday Pub Quiz!",
       "publishedAt": "2024-12-12T13:49:55Z",
-      "views": 2651,
+      "views": 2652,
       "tags": [
         "olexa"
       ],
@@ -35512,6 +35512,27 @@
       "url": "https://www.youtube.com/watch?v=tDuWOG3TuFc"
     },
     {
+      "id": "f6btc66ydZA",
+      "title": "Mod Spotlight - Carpenter's Blocks",
+      "publishedAt": "2014-07-07T23:20:38Z",
+      "views": 458,
+      "tags": [
+        "yt:quality=high",
+        "minecraft",
+        "mine",
+        "craft",
+        "feed",
+        "the",
+        "beast",
+        "feedthebeast",
+        "direwolf20",
+        "bluexpehos",
+        "antvenom",
+        "vintagebeef"
+      ],
+      "url": "https://www.youtube.com/watch?v=f6btc66ydZA"
+    },
+    {
       "id": "b4wAicOx8YA",
       "title": "Spelunky 2, Teardown, Among Us with Subs! |  November 14th, 2020 Stream",
       "publishedAt": "2021-01-13T20:00:06Z",
@@ -35542,27 +35563,6 @@
         "let's"
       ],
       "url": "https://www.youtube.com/watch?v=gIs2H3U-toI"
-    },
-    {
-      "id": "f6btc66ydZA",
-      "title": "Mod Spotlight - Carpenter's Blocks",
-      "publishedAt": "2014-07-07T23:20:38Z",
-      "views": 457,
-      "tags": [
-        "yt:quality=high",
-        "minecraft",
-        "mine",
-        "craft",
-        "feed",
-        "the",
-        "beast",
-        "feedthebeast",
-        "direwolf20",
-        "bluexpehos",
-        "antvenom",
-        "vintagebeef"
-      ],
-      "url": "https://www.youtube.com/watch?v=f6btc66ydZA"
     },
     {
       "id": "67xRxQvsbjc",
