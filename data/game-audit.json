@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T15:56:47.767Z",
+  "generatedAt": "2026-09-29T20:51:47.713Z",
   "summary": {
-    "totalVideos": 6282,
+    "totalVideos": 6283,
     "beforeIdentifiedVideos": 3127,
     "beforeCoveragePercent": 49.8,
     "identifiedVideos": 4963,
@@ -10,13 +10,13 @@
     "coverageGain": 1836,
     "steamLinkedVideos": 3124,
     "canonicalGames": 760,
-    "unidentifiedVideos": 1319,
-    "ambiguousVideos": 641,
+    "unidentifiedVideos": 1320,
+    "ambiguousVideos": 642,
     "duplicateMappingGroups": 8,
     "malformedGameNames": 0,
     "identificationSources": {
       "steam": 3038,
-      "unidentified": 1319,
+      "unidentified": 1320,
       "title": 781,
       "metadata": 759,
       "tags": 188,
@@ -30,7 +30,7 @@
       "id": "LIsF0Ln8djg",
       "title": "101 Facts and Tips for The Binding of Isaac: Afterbirth+",
       "publishedAt": "2018-05-19T16:00:01Z",
-      "views": 822401,
+      "views": 822402,
       "candidates": [
         {
           "slug": "binding-of-isaac-afterbirth",
@@ -63,7 +63,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 607378,
+      "views": 607382,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -118,7 +118,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 581895,
+      "views": 581901,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -191,7 +191,7 @@
       "id": "cq7WCiJluBs",
       "title": "TOP 10 SYNERGIES FOR 'THE FORGOTTEN'!",
       "publishedAt": "2018-05-06T16:00:02Z",
-      "views": 434123,
+      "views": 434124,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -272,7 +272,7 @@
       "id": "JJMcsstCddQ",
       "title": "101 MORE Facts about The Binding of Isaac AFTERBIRTH+!",
       "publishedAt": "2020-05-24T18:00:06Z",
-      "views": 326864,
+      "views": 326865,
       "candidates": [
         {
           "slug": "binding-of-isaac-afterbirth",
@@ -330,7 +330,7 @@
       "id": "Fxjtm3JK7rI",
       "title": "The BEST BRIMSTONE SYNERGIES in the Binding of Isaac: REPENTANCE!",
       "publishedAt": "2021-05-09T16:00:05Z",
-      "views": 276371,
+      "views": 276372,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -393,7 +393,7 @@
       "id": "gp76eqyDlxs",
       "title": "Every Time I Get Hit, the Roguelike Changes through History",
       "publishedAt": "2023-11-05T16:00:33Z",
-      "views": 213138,
+      "views": 213141,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -661,7 +661,7 @@
       "id": "j3Oa3ClY7nc",
       "title": "RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...",
       "publishedAt": "2021-06-26T17:00:20Z",
-      "views": 91518,
+      "views": 91520,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -700,7 +700,7 @@
       "id": "jayeMzegTCA",
       "title": "😅",
       "publishedAt": "2026-06-18T11:11:03Z",
-      "views": 75585,
+      "views": 75586,
       "candidates": [
         {
           "slug": "steam-3618850",
@@ -751,7 +751,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 61403,
+      "views": 61435,
       "candidates": [
         {
           "slug": "steam-2379780",
@@ -1564,7 +1564,7 @@
       "id": "4z2OQJzuKjs",
       "title": "My Favorite Brilliant Top Down Shooter Rogueli--",
       "publishedAt": "2024-11-01T15:00:04Z",
-      "views": 20512,
+      "views": 20513,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -1976,7 +1976,7 @@
       "id": "Tv6PhOlznrU",
       "title": "TWITCH CHAT CONTROLS MY RUN...  |  The Binding of Isaac: REPENTANCE Mods",
       "publishedAt": "2021-06-15T18:00:14Z",
-      "views": 14780,
+      "views": 14782,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -3917,6 +3917,34 @@
       ]
     },
     {
+      "id": "oSEoUIn7naY",
+      "title": "The BEST Big Number Roguelike of 2026",
+      "publishedAt": "2026-09-29T16:00:38Z",
+      "views": 6697,
+      "candidates": [
+        {
+          "slug": "steam-2097570",
+          "name": "StarVaders",
+          "score": 87,
+          "reasons": [
+            "description mentions “starvaders”",
+            "tag family “starvaders”",
+            "tag names “starvaders”"
+          ]
+        },
+        {
+          "slug": "steam-3917700",
+          "name": "DiceVaders",
+          "score": 84,
+          "reasons": [
+            "description mentions “dicevaders”",
+            "tag family “dicevaders”",
+            "tag names “dicevaders”"
+          ]
+        }
+      ]
+    },
+    {
       "id": "asDNI1oJtw4",
       "title": "ELECTRO CAT!  |  Binding of Isaac: ANTIBIRTH Eden Streaks  |  18",
       "publishedAt": "2020-07-29T17:00:00Z",
@@ -5819,7 +5847,7 @@
       "id": "4tCw25H4e78",
       "title": "First Person Deckbuilding Roguelite?!  |  Olexa Looks at: Shroom and Gloom",
       "publishedAt": "2022-02-24T19:00:03Z",
-      "views": 4207,
+      "views": 4208,
       "candidates": [
         {
           "slug": "steam-3271280",
@@ -9025,7 +9053,7 @@
       "id": "Q8D5iS_ORQs",
       "title": "Modded Server - Oreberry Farm #3",
       "publishedAt": "2014-07-16T21:06:12Z",
-      "views": 1284,
+      "views": 1285,
       "candidates": [
         {
           "slug": "minecraft",
@@ -21254,7 +21282,7 @@
       "id": "LIsF0Ln8djg",
       "title": "101 Facts and Tips for The Binding of Isaac: Afterbirth+",
       "publishedAt": "2018-05-19T16:00:01Z",
-      "views": 822401,
+      "views": 822402,
       "tags": [
         "facts about isaac",
         "isaac facts",
@@ -21275,7 +21303,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 607378,
+      "views": 607382,
       "tags": [
         "olexa",
         "roguelike",
@@ -21296,7 +21324,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 581895,
+      "views": 581901,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21359,7 +21387,7 @@
       "id": "cq7WCiJluBs",
       "title": "TOP 10 SYNERGIES FOR 'THE FORGOTTEN'!",
       "publishedAt": "2018-05-06T16:00:02Z",
-      "views": 434123,
+      "views": 434124,
       "tags": [
         "the binding of isaac rebirth",
         "the binding of isaac: rebirth (video game)",
@@ -21401,7 +21429,7 @@
       "id": "oqfKhyP1Wdk",
       "title": "I Made Roguelike Lockout Bingo, Except There’s a Twist…",
       "publishedAt": "2025-08-24T17:00:58Z",
-      "views": 336515,
+      "views": 336660,
       "tags": [
         "olexa",
         "lockout bingo",
@@ -21422,7 +21450,7 @@
       "id": "JJMcsstCddQ",
       "title": "101 MORE Facts about The Binding of Isaac AFTERBIRTH+!",
       "publishedAt": "2020-05-24T18:00:06Z",
-      "views": 326864,
+      "views": 326865,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21464,7 +21492,7 @@
       "id": "Fxjtm3JK7rI",
       "title": "The BEST BRIMSTONE SYNERGIES in the Binding of Isaac: REPENTANCE!",
       "publishedAt": "2021-05-09T16:00:05Z",
-      "views": 276371,
+      "views": 276372,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21527,7 +21555,7 @@
       "id": "gp76eqyDlxs",
       "title": "Every Time I Get Hit, the Roguelike Changes through History",
       "publishedAt": "2023-11-05T16:00:33Z",
-      "views": 213138,
+      "views": 213141,
       "tags": [
         "olexa",
         "best roguelike games 2023",
@@ -21611,7 +21639,7 @@
       "id": "1ZGM_kbnabY",
       "title": "The ONLY Overwhelmingly Positive Deckbuilding Roguelikes",
       "publishedAt": "2024-06-24T16:00:04Z",
-      "views": 155646,
+      "views": 155661,
       "tags": [
         "olexa",
         "best roguelike games",
@@ -21653,7 +21681,7 @@
       "id": "LWCQKRjHooo",
       "title": "HOW TO GET -1 FIRE RATE! EVERYTHING ABOUT TEARS! :: In Depth Isaac :: 1",
       "publishedAt": "2017-09-03T17:00:03Z",
-      "views": 125389,
+      "views": 125390,
       "tags": [
         "video",
         "games",
@@ -21693,7 +21721,7 @@
       "id": "koxMgiQhZf4",
       "title": "WHAT IS A ROGUELIKE? [Roguelike vs Roguelite]",
       "publishedAt": "2018-07-14T17:00:02Z",
-      "views": 112693,
+      "views": 112695,
       "tags": [
         "roguelike",
         "roguelite",
@@ -21708,7 +21736,7 @@
       "id": "au9CptSolpI",
       "title": "Roguelike Deckbuilding... Tetris?",
       "publishedAt": "2025-01-23T16:00:03Z",
-      "views": 107682,
+      "views": 107705,
       "tags": [
         "olexa",
         "drop duchy",
@@ -21827,7 +21855,7 @@
       "id": "j3Oa3ClY7nc",
       "title": "RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...",
       "publishedAt": "2021-06-26T17:00:20Z",
-      "views": 91518,
+      "views": 91520,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21858,7 +21886,7 @@
       "id": "ImfjWGcKC4U",
       "title": "The BEST Top Down Shooter Roguelike in Years",
       "publishedAt": "2025-03-11T15:00:32Z",
-      "views": 88013,
+      "views": 88021,
       "tags": [
         "olexa",
         "odinfall game",
@@ -21928,7 +21956,7 @@
       "id": "ljcXEJxreWA",
       "title": "This is the Ultimate 200+ Roguelike Ranking",
       "publishedAt": "2023-04-28T15:00:35Z",
-      "views": 77899,
+      "views": 77903,
       "tags": [
         "olexa",
         "roguelike",
@@ -21965,7 +21993,7 @@
       "id": "jayeMzegTCA",
       "title": "😅",
       "publishedAt": "2026-06-18T11:11:03Z",
-      "views": 75585,
+      "views": 75586,
       "tags": [
         "olexa",
         "Pronoun palace",
@@ -22016,7 +22044,7 @@
       "id": "bcUNM9U4Uug",
       "title": "This INSANE Plants vs. Zombies Mod Shocked Me",
       "publishedAt": "2025-10-22T16:01:12Z",
-      "views": 70979,
+      "views": 70981,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -22077,7 +22105,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 61403,
+      "views": 61435,
       "tags": [
         "olexa",
         "runeborn",
@@ -22098,7 +22126,7 @@
       "id": "iybVcN31EiI",
       "title": "The Rise of “Gambling” Roguelikes",
       "publishedAt": "2025-06-15T16:01:10Z",
-      "views": 57692,
+      "views": 57702,
       "tags": [
         "olexa",
         "slot machine roguelike",
@@ -22161,7 +22189,7 @@
       "id": "hqILq03uoo4",
       "title": "The King is Watching... Can You Build and Defend his City?",
       "publishedAt": "2025-07-21T16:01:15Z",
-      "views": 55175,
+      "views": 55177,
       "tags": [
         "olexa",
         "the king is watching game",
@@ -22224,7 +22252,7 @@
       "id": "xcjyFJOQ0ho",
       "title": "A Deckbuilding Roguelike All About Killing Your Own Cards (and pie)",
       "publishedAt": "2025-08-07T17:22:11Z",
-      "views": 52086,
+      "views": 52094,
       "tags": [
         "olexa",
         "the royal writ",
@@ -22242,31 +22270,10 @@
       "url": "https://www.youtube.com/watch?v=xcjyFJOQ0ho"
     },
     {
-      "id": "mVAmApW560g",
-      "title": "The Best Gambling Roguelike is FINALLY HERE! #ad",
-      "publishedAt": "2024-08-05T18:00:34Z",
-      "views": 51684,
-      "tags": [
-        "olexa",
-        "dungeons and degenerate gamblers",
-        "dungeons & degenerate gamblers",
-        "dungeons & degenerate gamblers review",
-        "dungeons & degenerate gamblers preview",
-        "dungeons & degenerate gamblers gameplay",
-        "dungeons and degenerate gamblers gameplay",
-        "dungeons and degenerate gamblers demo",
-        "dungeons and degenerate gamblers review",
-        "lets play dungeons and degenerate gamblers",
-        "dungeons and degenerate gamblers speedrun",
-        "dungeons & degenerate gamblers game"
-      ],
-      "url": "https://www.youtube.com/watch?v=mVAmApW560g"
-    },
-    {
       "id": "d6LLOEqOs2E",
       "title": "Every Upgrade Has a Downside in This New Tactical Roguelike",
       "publishedAt": "2026-09-24T17:30:05Z",
-      "views": 51501,
+      "views": 51743,
       "tags": [
         "olexa",
         "deified",
@@ -22284,10 +22291,31 @@
       "url": "https://www.youtube.com/watch?v=d6LLOEqOs2E"
     },
     {
+      "id": "mVAmApW560g",
+      "title": "The Best Gambling Roguelike is FINALLY HERE! #ad",
+      "publishedAt": "2024-08-05T18:00:34Z",
+      "views": 51687,
+      "tags": [
+        "olexa",
+        "dungeons and degenerate gamblers",
+        "dungeons & degenerate gamblers",
+        "dungeons & degenerate gamblers review",
+        "dungeons & degenerate gamblers preview",
+        "dungeons & degenerate gamblers gameplay",
+        "dungeons and degenerate gamblers gameplay",
+        "dungeons and degenerate gamblers demo",
+        "dungeons and degenerate gamblers review",
+        "lets play dungeons and degenerate gamblers",
+        "dungeons and degenerate gamblers speedrun",
+        "dungeons & degenerate gamblers game"
+      ],
+      "url": "https://www.youtube.com/watch?v=mVAmApW560g"
+    },
+    {
       "id": "l06N3gpL5WY",
       "title": "This Mining Tower Defense Roguelike is SO GOOD",
       "publishedAt": "2025-04-28T15:01:19Z",
-      "views": 50297,
+      "views": 50298,
       "tags": [
         "olexa",
         "drill core",
@@ -22690,7 +22718,7 @@
       "id": "LXvydd5gWAs",
       "title": "The Dicebuilding Roguelike Where You BET BIG or... burn",
       "publishedAt": "2025-10-10T16:00:40Z",
-      "views": 30797,
+      "views": 30802,
       "tags": [
         "olexa",
         "dicealot game",
@@ -22732,7 +22760,7 @@
       "id": "d84g4fO-HVc",
       "title": "I Asked For Help, and 5000 of You Answered",
       "publishedAt": "2026-08-24T20:00:04Z",
-      "views": 30125,
+      "views": 30137,
       "tags": [
         "olexa"
       ],
@@ -22773,7 +22801,7 @@
       "id": "NAUMuK_hY24",
       "title": "New Hacking Roguelike?! #olexa #roguelike #roguelite #games #hacking #cybersecurity",
       "publishedAt": "2023-01-23T03:43:25Z",
-      "views": 29363,
+      "views": 29367,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=NAUMuK_hY24"
     },
@@ -22858,7 +22886,7 @@
       "id": "wmYMpsbMlA0",
       "title": "This Experimental Puzzle Game Has 100,000,000+ Spell Combinations?!",
       "publishedAt": "2026-03-12T16:01:36Z",
-      "views": 26241,
+      "views": 26239,
       "tags": [
         "olexa",
         "rhell",
@@ -23111,7 +23139,7 @@
       "id": "4_tFhYzFo1w",
       "title": "I'm Sacrificing Children to the Dark One in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-26T21:00:06Z",
-      "views": 21328,
+      "views": 21335,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23237,7 +23265,7 @@
       "id": "4z2OQJzuKjs",
       "title": "My Favorite Brilliant Top Down Shooter Rogueli--",
       "publishedAt": "2024-11-01T15:00:04Z",
-      "views": 20512,
+      "views": 20513,
       "tags": [
         "olexa",
         "binding of isaac",
@@ -23479,7 +23507,7 @@
       "id": "-2xUvaj2Rjw",
       "title": "Boardgames are Roguelikes… here’s why",
       "publishedAt": "2025-07-27T17:20:41Z",
-      "views": 18000,
+      "views": 18003,
       "tags": [
         "olexa",
         "roguelikes",
@@ -23500,7 +23528,7 @@
       "id": "kU-B3aKGAW4",
       "title": "I've Never Been More Excited for My Channel",
       "publishedAt": "2025-11-30T18:20:44Z",
-      "views": 17837,
+      "views": 17838,
       "tags": [
         "olexa"
       ],
@@ -23552,7 +23580,7 @@
       "id": "HvKVUTber84",
       "title": "GUILLO4N— it's just the zaratana fight",
       "publishedAt": "2026-04-17T16:00:26Z",
-      "views": 17340,
+      "views": 17348,
       "tags": [
         "olexa"
       ],
@@ -23646,7 +23674,7 @@
       "id": "7Mpt5-HnmtA",
       "title": "If You Were Concerned I Learned How to Read, Don't Worry",
       "publishedAt": "2025-12-11T20:00:07Z",
-      "views": 16505,
+      "views": 16506,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23808,7 +23836,7 @@
       "id": "Tv6PhOlznrU",
       "title": "TWITCH CHAT CONTROLS MY RUN...  |  The Binding of Isaac: REPENTANCE Mods",
       "publishedAt": "2021-06-15T18:00:14Z",
-      "views": 14780,
+      "views": 14782,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -24030,7 +24058,7 @@
       "id": "DHe4YOqCyT0",
       "title": "1 Hour of Pain in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-18T17:00:19Z",
-      "views": 13078,
+      "views": 13079,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -24205,7 +24233,7 @@
       "id": "f7YjYPDW-eM",
       "title": "The HARDEST Quiz I've Ever Done, and It's about my own videos...",
       "publishedAt": "2025-12-31T21:00:51Z",
-      "views": 12061,
+      "views": 12064,
       "tags": [
         "olexa"
       ],
@@ -25818,6 +25846,27 @@
       "url": "https://www.youtube.com/watch?v=kjFVNjl77ww"
     },
     {
+      "id": "oSEoUIn7naY",
+      "title": "The BEST Big Number Roguelike of 2026",
+      "publishedAt": "2026-09-29T16:00:38Z",
+      "views": 6697,
+      "tags": [
+        "olexa",
+        "DiceVaders",
+        "DiceVaders gameplay",
+        "DiceVaders roguelike",
+        "dice roguelike",
+        "dice game",
+        "roguelike",
+        "roguelite",
+        "indie roguelike",
+        "indie game",
+        "deckbuilder",
+        "roguelike deckbuilder"
+      ],
+      "url": "https://www.youtube.com/watch?v=oSEoUIn7naY"
+    },
+    {
       "id": "v8w06O96V6M",
       "title": "NO MESSIN' AROUND THIS TIME! :: Modded Isaac: Eden Streaking [Season 2] :: 1",
       "publishedAt": "2018-04-26T21:00:08Z",
@@ -26341,7 +26390,7 @@
       "id": "ALLYdcYvMag",
       "title": "I’m the Minesweeper champion #olexa #roguelike #games #minesweeper #puzzlegame",
       "publishedAt": "2023-01-08T21:20:37Z",
-      "views": 5924,
+      "views": 5925,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=ALLYdcYvMag"
     },
@@ -27901,7 +27950,7 @@
       "id": "4tCw25H4e78",
       "title": "First Person Deckbuilding Roguelite?!  |  Olexa Looks at: Shroom and Gloom",
       "publishedAt": "2022-02-24T19:00:03Z",
-      "views": 4207,
+      "views": 4208,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -27952,7 +28001,7 @@
       "id": "mbXkgT_v5zM",
       "title": "TACKLING REDACTLE!  |  Wordle Variants with Tyler",
       "publishedAt": "2022-08-03T21:00:33Z",
-      "views": 4135,
+      "views": 4136,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -28156,7 +28205,7 @@
       "id": "2JjwuewV2uE",
       "title": "Understanding Creativity in Content Creation (w/ @orbitalpotato )",
       "publishedAt": "2026-01-14T17:00:05Z",
-      "views": 3982,
+      "views": 3983,
       "tags": [
         "olexa"
       ],
@@ -29196,7 +29245,7 @@
       "id": "TQUBd9o6hfU",
       "title": "Autobattling Deckbuilders and Basketball Fans, There's Dozens of Us",
       "publishedAt": "2023-10-31T21:01:11Z",
-      "views": 3142,
+      "views": 3141,
       "tags": [
         "olexa",
         "best roguelike games 2023",
@@ -30115,7 +30164,7 @@
       "id": "vxv-7fDLKbc",
       "title": "Tomorrow.",
       "publishedAt": "2024-11-30T16:00:59Z",
-      "views": 2543,
+      "views": 2544,
       "tags": [
         "olexa"
       ],
@@ -32064,7 +32113,7 @@
       "id": "Q8D5iS_ORQs",
       "title": "Modded Server - Oreberry Farm #3",
       "publishedAt": "2014-07-16T21:06:12Z",
-      "views": 1284,
+      "views": 1285,
       "tags": [
         "yt:quality=high",
         "minecraft",
