@@ -1,39 +1,39 @@
 # Olexa Data Quality V2 audit
 
-Generated: 2026-10-03T18:01:40.619Z
+Generated: 2026-10-03T21:22:01.599Z
 
 ## Coverage
 
-- Before (Steam/manual rules): **3,130 / 6,286 (49.8%)**
-- After Data Quality V2: **4,965 / 6,286 (79%)**
-- Newly identified through metadata inheritance: **1,835**
+- Before (Steam/manual rules): **3,131 / 6,287 (49.8%)**
+- After Data Quality V2: **4,967 / 6,287 (79%)**
+- Newly identified through metadata inheritance: **1,836**
 - Canonical games: **760**
-- Unidentified: **1,321**
-- Ambiguous: **639**
+- Unidentified: **1,320**
+- Ambiguous: **642**
 - Possible duplicate mapping groups: **8**
 - Malformed canonical names: **0**
 
 ## Identification sources
 
-- steam: 3,041
-- unidentified: 1,321
-- title: 786
-- metadata: 754
-- tags: 187
+- steam: 3,042
+- unidentified: 1,320
+- title: 781
+- metadata: 759
+- tags: 188
 - description: 119
 - steam+curated: 71
 - rule: 7
 
 ## Highest-view unidentified videos
 
-- [101 Facts and Tips for The Binding of Isaac: Afterbirth+](https://www.youtube.com/watch?v=LIsF0Ln8djg) — 822,414 views (2018-05-19)
-- [Every Time I Get Hit, the Roguelike Changes](https://www.youtube.com/watch?v=ChOVBro2sZw) — 607,516 views (2023-03-26)
-- [The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]](https://www.youtube.com/watch?v=ZZpwOlLLL6I) — 581,964 views (2020-01-26)
+- [101 Facts and Tips for The Binding of Isaac: Afterbirth+](https://www.youtube.com/watch?v=LIsF0Ln8djg) — 822,415 views (2018-05-19)
+- [Every Time I Get Hit, the Roguelike Changes](https://www.youtube.com/watch?v=ChOVBro2sZw) — 607,517 views (2023-03-26)
+- [The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]](https://www.youtube.com/watch?v=ZZpwOlLLL6I) — 581,966 views (2020-01-26)
 - [TOP 10 WORST ITEMS IN AFTERBIRTH + !](https://www.youtube.com/watch?v=eeNgoS0Lu44) — 563,711 views (2017-04-26)
 - [TOP 20 SOY MILK SYNERGIES IN AFTERBIRTH+!](https://www.youtube.com/watch?v=M1ZWdbiSKbE) — 531,183 views (2018-05-26)
 - [TOP 10 SYNERGIES FOR 'THE FORGOTTEN'!](https://www.youtube.com/watch?v=cq7WCiJluBs) — 434,135 views (2018-05-06)
-- [The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]](https://www.youtube.com/watch?v=Tw4-1FQbrfM) — 431,481 views (2021-10-23)
-- [I Made Roguelike Lockout Bingo, Except There’s a Twist…](https://www.youtube.com/watch?v=oqfKhyP1Wdk) — 338,710 views (2025-08-24)
+- [The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]](https://www.youtube.com/watch?v=Tw4-1FQbrfM) — 431,482 views (2021-10-23)
+- [I Made Roguelike Lockout Bingo, Except There’s a Twist…](https://www.youtube.com/watch?v=oqfKhyP1Wdk) — 338,738 views (2025-08-24)
 - [101 MORE Facts about The Binding of Isaac AFTERBIRTH+!](https://www.youtube.com/watch?v=JJMcsstCddQ) — 326,873 views (2020-05-24)
 - [HOW TO BREAK THE GAME! [Binding of Isaac Afterbirth+ In Depth Guide] **OUTDATED FOR REPENTANCE**](https://www.youtube.com/watch?v=CTweoydwm3w) — 308,491 views (2017-06-14)
 - [The BEST BRIMSTONE SYNERGIES in the Binding of Isaac: REPENTANCE!](https://www.youtube.com/watch?v=Fxjtm3JK7rI) — 276,373 views (2021-05-09)
@@ -43,12 +43,12 @@ Generated: 2026-10-03T18:01:40.619Z
 - [Can you Beat The Password Game?](https://www.youtube.com/watch?v=RDHhGhOn7EE) — 207,268 views (2023-07-01)
 - [Every Time I Get Hit, MORE Roguelikes Change](https://www.youtube.com/watch?v=_IyHzB9MxVc) — 195,481 views (2023-04-05)
 - [TOP 15 DEVIL DEAL ITEMS in The Binding of Isaac: AFTERBIRTH+!](https://www.youtube.com/watch?v=6_y6U4LAbrI) — 174,111 views (2019-07-27)
-- [The ONLY Overwhelmingly Positive Deckbuilding Roguelikes](https://www.youtube.com/watch?v=1ZGM_kbnabY) — 155,902 views (2024-06-24)
+- [The ONLY Overwhelmingly Positive Deckbuilding Roguelikes](https://www.youtube.com/watch?v=1ZGM_kbnabY) — 155,917 views (2024-06-24)
 - [This is the BEST Tactical Roguelike of 2023](https://www.youtube.com/watch?v=kTu_6jpQyeM) — 151,665 views (2023-04-03)
 - [HOW TO GET -1 FIRE RATE! EVERYTHING ABOUT TEARS! :: In Depth Isaac :: 1](https://www.youtube.com/watch?v=LWCQKRjHooo) — 125,392 views (2017-09-03)
 - [it's that mod you all want me to play](https://www.youtube.com/watch?v=j5r6jvsxBpU) — 118,552 views (2018-04-03)
 - [WHAT IS A ROGUELIKE? [Roguelike vs Roguelite]](https://www.youtube.com/watch?v=koxMgiQhZf4) — 112,723 views (2018-07-14)
-- [Roguelike Deckbuilding... Tetris?](https://www.youtube.com/watch?v=au9CptSolpI) — 108,475 views (2025-01-23)
+- [Roguelike Deckbuilding... Tetris?](https://www.youtube.com/watch?v=au9CptSolpI) — 108,491 views (2025-01-23)
 - [Every Time I Get Hit, the Game Changes to a MORE OBSCURE Roguelike](https://www.youtube.com/watch?v=YBs2f62HU2A) — 104,819 views (2023-04-23)
 - [The TOP 10 Indie Games of 2024](https://www.youtube.com/watch?v=ROeyrCws0ow) — 100,415 views (2024-12-31)
 - [HOW TO GET 25,000 DAMAGE! :: In Depth Isaac: Damage](https://www.youtube.com/watch?v=b8gA10W0gYk) — 99,495 views (2018-01-06)
@@ -56,10 +56,10 @@ Generated: 2026-10-03T18:01:40.619Z
 - [25 Facts You May Not Have Known About the Binding of Isaac AFTERBIRTH](https://www.youtube.com/watch?v=yVI8Tul6nzY) — 92,127 views (2016-06-14)
 - [RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...](https://www.youtube.com/watch?v=j3Oa3ClY7nc) — 91,538 views (2021-06-26)
 - [I'm Not Proud of My Videos](https://www.youtube.com/watch?v=pVG_5qYpSSQ) — 89,509 views (2025-11-20)
-- [The BEST Top Down Shooter Roguelike in Years](https://www.youtube.com/watch?v=ImfjWGcKC4U) — 88,090 views (2025-03-11)
-- [EVERYTHING TO KNOW ABOUT EDEN! :: In Depth Isaac :: 2](https://www.youtube.com/watch?v=Y46lOOD-20E) — 83,752 views (2017-09-23)
+- [The BEST Top Down Shooter Roguelike in Years](https://www.youtube.com/watch?v=ImfjWGcKC4U) — 88,096 views (2025-03-11)
+- [EVERYTHING TO KNOW ABOUT EDEN! :: In Depth Isaac :: 2](https://www.youtube.com/watch?v=Y46lOOD-20E) — 83,754 views (2017-09-23)
 - [If You Like These Roguelikes, You’ll Love These Replacements](https://www.youtube.com/watch?v=tO3fLhs59x4) — 83,083 views (2023-10-21)
-- [TOP 10 LUMP OF COAL SYNERGIES!](https://www.youtube.com/watch?v=YemIJJec3zU) — 79,984 views (2017-12-30)
+- [TOP 10 LUMP OF COAL SYNERGIES!](https://www.youtube.com/watch?v=YemIJJec3zU) — 79,985 views (2017-12-30)
 - [This is the Ultimate 200+ Roguelike Ranking](https://www.youtube.com/watch?v=ljcXEJxreWA) — 77,942 views (2023-04-28)
 - [TOP 10 ORBITALS IN AFTERBIRTH+!](https://www.youtube.com/watch?v=DXNx55Izptg) — 77,478 views (2018-11-11)
 - [😅](https://www.youtube.com/watch?v=jayeMzegTCA) — 75,684 views (2026-06-18)
@@ -68,14 +68,14 @@ Generated: 2026-10-03T18:01:40.619Z
 - [This INSANE Plants vs. Zombies Mod Shocked Me](https://www.youtube.com/watch?v=bcUNM9U4Uug) — 71,046 views (2025-10-22)
 - [THE DRAFTING OF ISAAC!](https://www.youtube.com/watch?v=uP2z5kvXkhQ) — 69,257 views (2018-05-12)
 - [This Banger Boss Battling Roguelike Only Uses ONE BUTTON!?](https://www.youtube.com/watch?v=yaYFvZWUVbY) — 67,655 views (2024-08-06)
-- [Slot Machine + Balatro = NEW ROGUELIKE](https://www.youtube.com/watch?v=5Fb9GwVlEpk) — 63,591 views (2025-10-09)
-- [New Banger Co-op Roguelike Just Dropped](https://www.youtube.com/watch?v=fuYq98kMMWE) — 62,849 views (2024-07-24)
-- [The Rise of “Gambling” Roguelikes](https://www.youtube.com/watch?v=iybVcN31EiI) — 57,843 views (2025-06-15)
+- [Slot Machine + Balatro = NEW ROGUELIKE](https://www.youtube.com/watch?v=5Fb9GwVlEpk) — 63,757 views (2025-10-09)
+- [New Banger Co-op Roguelike Just Dropped](https://www.youtube.com/watch?v=fuYq98kMMWE) — 62,850 views (2024-07-24)
+- [The Rise of “Gambling” Roguelikes](https://www.youtube.com/watch?v=iybVcN31EiI) — 57,866 views (2025-06-15)
 - [TOP 10 HATED ENEMIES!](https://www.youtube.com/watch?v=n7GKg2mlnDo) — 57,516 views (2016-04-01)
 - [25 MORE Facts You May Not Have Known about the Binding of Isaac AFTERBIRTH!](https://www.youtube.com/watch?v=LNPo9WhDAy4) — 55,724 views (2016-12-15)
-- [The King is Watching... Can You Build and Defend his City?](https://www.youtube.com/watch?v=hqILq03uoo4) — 55,207 views (2025-07-21)
-- [Every Upgrade Has a Downside in This New Tactical Roguelike](https://www.youtube.com/watch?v=d6LLOEqOs2E) — 54,235 views (2026-09-24)
-- [New XCOM-style Roguelike Just Dropped](https://www.youtube.com/watch?v=oXpTdgTnez4) — 53,057 views (2025-07-05)
+- [The King is Watching... Can You Build and Defend his City?](https://www.youtube.com/watch?v=hqILq03uoo4) — 55,208 views (2025-07-21)
+- [Every Upgrade Has a Downside in This New Tactical Roguelike](https://www.youtube.com/watch?v=d6LLOEqOs2E) — 54,288 views (2026-09-24)
+- [New XCOM-style Roguelike Just Dropped](https://www.youtube.com/watch?v=oXpTdgTnez4) — 53,059 views (2025-07-05)
 
 ## Ambiguous videos
 
@@ -107,6 +107,7 @@ Generated: 2026-10-03T18:01:40.619Z
 - TOP 10 CURSED EYE SYNERGIES in The Binding of Isaac: AFTERBIRTH+! (Vs7Flk3YK64) — Binding of Isaac Afterbirth+ (100), the Binding of Isaac (100), The Binding of Isaac Rebirth (78), Repentance (67), Enter the Gungeon (67)
 - THE MATCHING OF ISAAC! (VK3Q6rcj2t0) — the Binding of Isaac (82), Binding of Isaac Afterbirth+ (78), The Binding of Isaac Rebirth (78)
 - TOP 10 ANGEL DEAL ITEMS! (fSXioSIyEFQ) — Minecraft (81), Terraria (78)
+- TOP 10 TRANSFORMATIONS! (OKLZMk6oCM4) — the Binding of Isaac (82), Binding of Isaac Afterbirth+ (78), The Binding of Isaac Rebirth (78)
 - MODDED WHEEL OF ISAAC! (DUtxzaioEuU) — the Binding of Isaac (82), Binding of Isaac Afterbirth+ (78), The Binding of Isaac Rebirth (78)
 - HUGE ISAAC MODPACK! TONS OF CHARACTERS!  |  Ultra Modded Isaac  |  1 (R8FEsD2Xhuk) — Repentance (86), the Binding of Isaac (82), Binding of Isaac: ANTIBIRTH (78)
 - Every 5 Minutes, the Roguelike I'm Playing Changes (8vKJOLpwB2U) — Enter the Gungeon (86), Slay the Spire (86), Into the Breach (81), Luck be a Landlord (67), Brutal Orchestra (67)
@@ -128,7 +129,6 @@ Generated: 2026-10-03T18:01:40.619Z
 - FIEND FOLIO, IPECAC, AND RETRIBUTION!?  | Ultra Modded Eden Streaks (UQKnQl0GZX8) — Repentance (86), the Binding of Isaac (82), The Binding of Isaac Rebirth (78)
 - Who is OlexaKid? (bN3K7IH3rsw) — RimWorld (86), Geoguessr (84), Minecraft (81)
 - THE PINWHEEL OF TORTURE!  |  Ultra Modded Eden Streaks (oRpKdHFtLbM) — Repentance (86), the Binding of Isaac (82), The Binding of Isaac Rebirth (78)
-- A MILKY DISASTER!  |  Binding of Isaac: ANTIBIRTH Eden Streaks  |  11 (l42ZZ7rQfv8) — Binding of Isaac: ANTIBIRTH (95), Repentance (91), the Binding of Isaac (82), The Binding of Isaac Rebirth (78), Enter the Gungeon (67)
 
 ## Possible duplicate mappings
 
