@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-24T16:39:02.983Z",
+  "generatedAt": "2026-10-24T19:32:07.286Z",
   "summary": {
     "totalVideos": 6305,
     "beforeIdentifiedVideos": 3147,
@@ -17,8 +17,8 @@
     "identificationSources": {
       "steam": 3057,
       "unidentified": 1321,
-      "title": 782,
-      "metadata": 758,
+      "title": 781,
+      "metadata": 759,
       "tags": 188,
       "description": 121,
       "steam+curated": 71,
@@ -63,7 +63,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 608019,
+      "views": 608024,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -118,7 +118,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 582214,
+      "views": 582216,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -224,7 +224,7 @@
       "id": "Tw4-1FQbrfM",
       "title": "The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]",
       "publishedAt": "2021-10-23T17:00:16Z",
-      "views": 431691,
+      "views": 431693,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -751,7 +751,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 67315,
+      "views": 67317,
       "candidates": [
         {
           "slug": "steam-2379780",
@@ -799,7 +799,7 @@
       "id": "oSEoUIn7naY",
       "title": "The BEST Big Number Roguelike of 2026",
       "publishedAt": "2026-09-29T16:00:38Z",
-      "views": 67083,
+      "views": 67093,
       "candidates": [
         {
           "slug": "steam-2097570",
@@ -1405,7 +1405,7 @@
       "id": "mATw23eIJQk",
       "title": "FTB Research Lab - XP to Mob Essence! (#7)",
       "publishedAt": "2014-05-19T21:34:29Z",
-      "views": 25410,
+      "views": 25411,
       "candidates": [
         {
           "slug": "minecraft",
@@ -3317,7 +3317,7 @@
       "id": "Bz3CduuYIRY",
       "title": "SACRED HEART... vs. GODHEAD?",
       "publishedAt": "2021-01-23T21:00:06Z",
-      "views": 8035,
+      "views": 8037,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -5707,7 +5707,7 @@
       "id": "4tCw25H4e78",
       "title": "First Person Deckbuilding Roguelite?!  |  Olexa Looks at: Shroom and Gloom",
       "publishedAt": "2022-02-24T19:00:03Z",
-      "views": 4254,
+      "views": 4255,
       "candidates": [
         {
           "slug": "steam-3271280",
@@ -8852,7 +8852,7 @@
       "id": "K_1o1cYRSBA",
       "title": "MOUNTAINS AND WATERFALLS! :: Zoo Tycoon 2: Creative Zoo :: 1",
       "publishedAt": "2016-12-28T21:00:02Z",
-      "views": 1535,
+      "views": 1536,
       "candidates": [
         {
           "slug": "geoguessr",
@@ -8927,7 +8927,7 @@
       "id": "XKlO7dpLr2I",
       "title": "THE FTL EXPERIENCE AND FINALE!  |  The Pyramid: Ultimate",
       "publishedAt": "2021-11-02T21:00:27Z",
-      "views": 1448,
+      "views": 1449,
       "candidates": [
         {
           "slug": "the-pyramid-ultimate",
@@ -10868,9 +10868,9 @@
       ]
     },
     {
-      "id": "2IU290VnUEc",
-      "title": "Zoo Tycoon 2 Episode 4: The Bench",
-      "publishedAt": "2013-11-19T23:51:18Z",
+      "id": "f6btc66ydZA",
+      "title": "Mod Spotlight - Carpenter's Blocks",
+      "publishedAt": "2014-07-07T23:20:38Z",
       "views": 481,
       "candidates": [
         {
@@ -10885,10 +10885,10 @@
       ]
     },
     {
-      "id": "f6btc66ydZA",
-      "title": "Mod Spotlight - Carpenter's Blocks",
-      "publishedAt": "2014-07-07T23:20:38Z",
-      "views": 480,
+      "id": "2IU290VnUEc",
+      "title": "Zoo Tycoon 2 Episode 4: The Bench",
+      "publishedAt": "2013-11-19T23:51:18Z",
+      "views": 481,
       "candidates": [
         {
           "slug": "minecraft",
@@ -12535,7 +12535,7 @@
       "id": "4IrVhy7sRTA",
       "title": "DARUDE SANDSTORM :: Ultimate Chicken Horse User Levels :: 8",
       "publishedAt": "2017-01-06T21:00:00Z",
-      "views": 240,
+      "views": 242,
       "candidates": [
         {
           "slug": "minecraft",
@@ -20375,7 +20375,7 @@
     },
     {
       "id": "degtt6xGswo",
-      "title": "I Can't Believe Someone Made This a Puzzle Game",
+      "title": "I'm Organizing Orgies.",
       "steamAppIds": [
         "1114380",
         "5277540"
@@ -21312,7 +21312,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 608019,
+      "views": 608024,
       "tags": [
         "olexa",
         "roguelike",
@@ -21333,7 +21333,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 582214,
+      "views": 582216,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21417,7 +21417,7 @@
       "id": "Tw4-1FQbrfM",
       "title": "The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]",
       "publishedAt": "2021-10-23T17:00:16Z",
-      "views": 431691,
+      "views": 431693,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21438,7 +21438,7 @@
       "id": "oqfKhyP1Wdk",
       "title": "I Made Roguelike Lockout Bingo, Except There’s a Twist…",
       "publishedAt": "2025-08-24T17:00:58Z",
-      "views": 347720,
+      "views": 347795,
       "tags": [
         "olexa",
         "lockout bingo",
@@ -21648,7 +21648,7 @@
       "id": "1ZGM_kbnabY",
       "title": "The ONLY Overwhelmingly Positive Deckbuilding Roguelikes",
       "publishedAt": "2024-06-24T16:00:04Z",
-      "views": 157143,
+      "views": 157159,
       "tags": [
         "olexa",
         "best roguelike games",
@@ -21745,7 +21745,7 @@
       "id": "au9CptSolpI",
       "title": "Roguelike Deckbuilding... Tetris?",
       "publishedAt": "2025-01-23T16:00:03Z",
-      "views": 109140,
+      "views": 109144,
       "tags": [
         "olexa",
         "drop duchy",
@@ -21895,7 +21895,7 @@
       "id": "ImfjWGcKC4U",
       "title": "The BEST Top Down Shooter Roguelike in Years",
       "publishedAt": "2025-03-11T15:00:32Z",
-      "views": 88384,
+      "views": 88387,
       "tags": [
         "olexa",
         "odinfall game",
@@ -22053,7 +22053,7 @@
       "id": "bcUNM9U4Uug",
       "title": "This INSANE Plants vs. Zombies Mod Shocked Me",
       "publishedAt": "2025-10-22T16:01:12Z",
-      "views": 71353,
+      "views": 71355,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -22104,7 +22104,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 67315,
+      "views": 67317,
       "tags": [
         "olexa",
         "runeborn",
@@ -22125,7 +22125,7 @@
       "id": "oSEoUIn7naY",
       "title": "The BEST Big Number Roguelike of 2026",
       "publishedAt": "2026-09-29T16:00:38Z",
-      "views": 67083,
+      "views": 67093,
       "tags": [
         "olexa",
         "DiceVaders",
@@ -22156,7 +22156,7 @@
       "id": "iybVcN31EiI",
       "title": "The Rise of “Gambling” Roguelikes",
       "publishedAt": "2025-06-15T16:01:10Z",
-      "views": 58660,
+      "views": 58663,
       "tags": [
         "olexa",
         "slot machine roguelike",
@@ -22261,7 +22261,7 @@
       "id": "oXpTdgTnez4",
       "title": "New XCOM-style Roguelike Just Dropped",
       "publishedAt": "2025-07-05T15:01:24Z",
-      "views": 53114,
+      "views": 53116,
       "tags": [
         "olexa",
         "day of the shell game",
@@ -22303,7 +22303,7 @@
       "id": "xcjyFJOQ0ho",
       "title": "A Deckbuilding Roguelike All About Killing Your Own Cards (and pie)",
       "publishedAt": "2025-08-07T17:22:11Z",
-      "views": 52603,
+      "views": 52608,
       "tags": [
         "olexa",
         "the royal writ",
@@ -22534,7 +22534,7 @@
       "id": "muqLqLK2q34",
       "title": "The Ikea Manual Roguelike Returns Once More",
       "publishedAt": "2025-12-01T18:21:47Z",
-      "views": 40027,
+      "views": 40031,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -22635,7 +22635,7 @@
       "id": "izACIo-Qin4",
       "title": "The Blade gun is SOOO good! #olexa #roguelike #roguelite #games #shotgunking",
       "publishedAt": "2023-02-01T23:00:21Z",
-      "views": 32776,
+      "views": 32777,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=izACIo-Qin4"
     },
@@ -22664,7 +22664,7 @@
       "id": "x-jc2uosnN4",
       "title": "This New Plant CHANGES EVERYTHING",
       "publishedAt": "2025-10-31T19:32:55Z",
-      "views": 31803,
+      "views": 31804,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -22706,7 +22706,7 @@
       "id": "LXvydd5gWAs",
       "title": "The Dicebuilding Roguelike Where You BET BIG or... burn",
       "publishedAt": "2025-10-10T16:00:40Z",
-      "views": 31459,
+      "views": 31460,
       "tags": [
         "olexa",
         "dicealot game",
@@ -22831,7 +22831,7 @@
       "id": "NAUMuK_hY24",
       "title": "New Hacking Roguelike?! #olexa #roguelike #roguelite #games #hacking #cybersecurity",
       "publishedAt": "2023-01-23T03:43:25Z",
-      "views": 29565,
+      "views": 29566,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=NAUMuK_hY24"
     },
@@ -22916,7 +22916,7 @@
       "id": "wmYMpsbMlA0",
       "title": "This Experimental Puzzle Game Has 100,000,000+ Spell Combinations?!",
       "publishedAt": "2026-03-12T16:01:36Z",
-      "views": 26327,
+      "views": 26331,
       "tags": [
         "olexa",
         "rhell",
@@ -22989,7 +22989,7 @@
       "id": "mATw23eIJQk",
       "title": "FTB Research Lab - XP to Mob Essence! (#7)",
       "publishedAt": "2014-05-19T21:34:29Z",
-      "views": 25410,
+      "views": 25411,
       "tags": [
         "yt:quality=high",
         "minecraft",
@@ -23064,7 +23064,7 @@
       "id": "x-il0eTmX4U",
       "title": "THREE Incredible New Roguelikes in One Video?",
       "publishedAt": "2025-10-28T16:01:52Z",
-      "views": 23800,
+      "views": 23801,
       "tags": [
         "olexa",
         "shroom and gloom",
@@ -23148,7 +23148,7 @@
       "id": "4_tFhYzFo1w",
       "title": "I'm Sacrificing Children to the Dark One in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-26T21:00:06Z",
-      "views": 21842,
+      "views": 21845,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23386,7 +23386,7 @@
       "id": "dy8-PhCg7yg",
       "title": "Getting My Feet Wet and My Hands Dirty in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-04T17:01:12Z",
-      "views": 19273,
+      "views": 19274,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23630,7 +23630,7 @@
       "id": "KsF5rkoyHHw",
       "title": "The Lucky Blover Arc",
       "publishedAt": "2025-12-14T22:30:05Z",
-      "views": 16973,
+      "views": 16974,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -23725,7 +23725,7 @@
       "id": "G33TyVDKLl8",
       "title": "Who else up torching they wood",
       "publishedAt": "2025-11-25T20:00:14Z",
-      "views": 16436,
+      "views": 16437,
       "tags": [
         "olexa"
       ],
@@ -23756,7 +23756,7 @@
       "id": "rwh-eUGaaqw",
       "title": "I've Got Huge Melons",
       "publishedAt": "2026-01-02T21:00:58Z",
-      "views": 16273,
+      "views": 16274,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -25291,7 +25291,7 @@
       "id": "Bz3CduuYIRY",
       "title": "SACRED HEART... vs. GODHEAD?",
       "publishedAt": "2021-01-23T21:00:06Z",
-      "views": 8035,
+      "views": 8037,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -26945,6 +26945,27 @@
       "url": "https://www.youtube.com/watch?v=0THAHtZSrbg"
     },
     {
+      "id": "degtt6xGswo",
+      "title": "I'm Organizing Orgies.",
+      "publishedAt": "2026-10-24T16:00:40Z",
+      "views": 5125,
+      "tags": [
+        "olexa",
+        "Orgynizer",
+        "Orgynizer gameplay",
+        "Orgynizer game",
+        "Olexa",
+        "Olexa gaming",
+        "puzzle game",
+        "logic puzzle",
+        "deduction game",
+        "indie games",
+        "indie puzzle games",
+        "weird indie games"
+      ],
+      "url": "https://www.youtube.com/watch?v=degtt6xGswo"
+    },
+    {
       "id": "IFvSuq77FQo",
       "title": "How to Make Effective Indie Game Thumbnails and Press Kits (Asset Extraction, Design, + more)",
       "publishedAt": "2024-01-18T16:00:09Z",
@@ -27896,7 +27917,7 @@
       "id": "4tCw25H4e78",
       "title": "First Person Deckbuilding Roguelite?!  |  Olexa Looks at: Shroom and Gloom",
       "publishedAt": "2022-02-24T19:00:03Z",
-      "views": 4254,
+      "views": 4255,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -28024,7 +28045,7 @@
       "id": "2JjwuewV2uE",
       "title": "Understanding Creativity in Content Creation (w/ @orbitalpotato )",
       "publishedAt": "2026-01-14T17:00:05Z",
-      "views": 4146,
+      "views": 4147,
       "tags": [
         "olexa"
       ],
@@ -29155,7 +29176,7 @@
       "id": "NfCeJMW9g9s",
       "title": "PASSPORT = CONFISCATED :: Papers, Please :: 9",
       "publishedAt": "2018-03-10T20:00:00Z",
-      "views": 3230,
+      "views": 3231,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=NfCeJMW9g9s"
     },
@@ -30173,7 +30194,7 @@
       "id": "vxv-7fDLKbc",
       "title": "Tomorrow.",
       "publishedAt": "2024-11-30T16:00:59Z",
-      "views": 2557,
+      "views": 2558,
       "tags": [
         "olexa"
       ],
@@ -31582,7 +31603,7 @@
       "id": "K_1o1cYRSBA",
       "title": "MOUNTAINS AND WATERFALLS! :: Zoo Tycoon 2: Creative Zoo :: 1",
       "publishedAt": "2016-12-28T21:00:02Z",
-      "views": 1535,
+      "views": 1536,
       "tags": [
         "yt:quality=high",
         "minecraft",
@@ -31798,7 +31819,7 @@
       "id": "XKlO7dpLr2I",
       "title": "THE FTL EXPERIENCE AND FINALE!  |  The Pyramid: Ultimate",
       "publishedAt": "2021-11-02T21:00:27Z",
-      "views": 1448,
+      "views": 1449,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -34472,27 +34493,6 @@
       "url": "https://www.youtube.com/watch?v=vLhLVzPmBAg"
     },
     {
-      "id": "degtt6xGswo",
-      "title": "I Can't Believe Someone Made This a Puzzle Game",
-      "publishedAt": "2026-10-24T16:00:40Z",
-      "views": 707,
-      "tags": [
-        "olexa",
-        "Orgynizer",
-        "Orgynizer gameplay",
-        "Orgynizer game",
-        "Olexa",
-        "Olexa gaming",
-        "puzzle game",
-        "logic puzzle",
-        "deduction game",
-        "indie games",
-        "indie puzzle games",
-        "weird indie games"
-      ],
-      "url": "https://www.youtube.com/watch?v=degtt6xGswo"
-    },
-    {
       "id": "cN_q1XcoC1U",
       "title": "SUSIE FINDS A HEART (Circa 2018 Colorized) :: Deltarune :: 4",
       "publishedAt": "2018-11-06T19:31:22Z",
@@ -35572,6 +35572,27 @@
       "url": "https://www.youtube.com/watch?v=Y1B3vIRh7QA"
     },
     {
+      "id": "f6btc66ydZA",
+      "title": "Mod Spotlight - Carpenter's Blocks",
+      "publishedAt": "2014-07-07T23:20:38Z",
+      "views": 481,
+      "tags": [
+        "yt:quality=high",
+        "minecraft",
+        "mine",
+        "craft",
+        "feed",
+        "the",
+        "beast",
+        "feedthebeast",
+        "direwolf20",
+        "bluexpehos",
+        "antvenom",
+        "vintagebeef"
+      ],
+      "url": "https://www.youtube.com/watch?v=f6btc66ydZA"
+    },
+    {
       "id": "2IU290VnUEc",
       "title": "Zoo Tycoon 2 Episode 4: The Bench",
       "publishedAt": "2013-11-19T23:51:18Z",
@@ -35591,27 +35612,6 @@
         "vintagebeef"
       ],
       "url": "https://www.youtube.com/watch?v=2IU290VnUEc"
-    },
-    {
-      "id": "f6btc66ydZA",
-      "title": "Mod Spotlight - Carpenter's Blocks",
-      "publishedAt": "2014-07-07T23:20:38Z",
-      "views": 480,
-      "tags": [
-        "yt:quality=high",
-        "minecraft",
-        "mine",
-        "craft",
-        "feed",
-        "the",
-        "beast",
-        "feedthebeast",
-        "direwolf20",
-        "bluexpehos",
-        "antvenom",
-        "vintagebeef"
-      ],
-      "url": "https://www.youtube.com/watch?v=f6btc66ydZA"
     },
     {
       "id": "XGJpOSCnDFw",
@@ -37698,7 +37698,7 @@
       "id": "4IrVhy7sRTA",
       "title": "DARUDE SANDSTORM :: Ultimate Chicken Horse User Levels :: 8",
       "publishedAt": "2017-01-06T21:00:00Z",
-      "views": 240,
+      "views": 242,
       "tags": [
         "yt:quality=high",
         "minecraft",
