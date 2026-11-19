@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-19T03:34:12.047Z",
+  "generatedAt": "2026-11-19T13:18:09.167Z",
   "summary": {
     "totalVideos": 6331,
     "beforeIdentifiedVideos": 3173,
@@ -63,7 +63,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 608514,
+      "views": 608524,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -118,7 +118,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 582394,
+      "views": 582398,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -224,7 +224,7 @@
       "id": "Tw4-1FQbrfM",
       "title": "The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]",
       "publishedAt": "2021-10-23T17:00:16Z",
-      "views": 431870,
+      "views": 431872,
       "candidates": [
         {
           "slug": "the-binding-of-isaac",
@@ -393,7 +393,7 @@
       "id": "gp76eqyDlxs",
       "title": "Every Time I Get Hit, the Roguelike Changes through History",
       "publishedAt": "2023-11-05T16:00:33Z",
-      "views": 213450,
+      "views": 213451,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -548,7 +548,7 @@
       "id": "YBs2f62HU2A",
       "title": "Every Time I Get Hit, the Game Changes to a MORE OBSCURE Roguelike",
       "publishedAt": "2023-04-23T18:00:11Z",
-      "views": 104920,
+      "views": 104921,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -700,7 +700,7 @@
       "id": "jayeMzegTCA",
       "title": "😅",
       "publishedAt": "2026-06-18T11:11:03Z",
-      "views": 76593,
+      "views": 76597,
       "candidates": [
         {
           "slug": "steam-3618850",
@@ -751,7 +751,7 @@
       "id": "oSEoUIn7naY",
       "title": "The BEST Big Number Roguelike of 2026",
       "publishedAt": "2026-09-29T16:00:38Z",
-      "views": 71551,
+      "views": 71588,
       "candidates": [
         {
           "slug": "steam-2097570",
@@ -779,7 +779,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 68537,
+      "views": 68554,
       "candidates": [
         {
           "slug": "steam-2379780",
@@ -1493,7 +1493,7 @@
       "id": "Q2qkxfUbUWg",
       "title": "Every Time I Get Hit, the Roguelike Changes to the Next Letter in the Alphabet",
       "publishedAt": "2024-03-18T15:00:31Z",
-      "views": 22536,
+      "views": 22538,
       "candidates": [
         {
           "slug": "steam-311690",
@@ -2259,7 +2259,7 @@
       "id": "0umcw7qx2LA",
       "title": "HARDEST ISAAC MOD EVER...  |  Binding of Isaac BEGGARS' PURGATORY",
       "publishedAt": "2020-08-07T17:00:00Z",
-      "views": 13502,
+      "views": 13503,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -3317,7 +3317,7 @@
       "id": "Bz3CduuYIRY",
       "title": "SACRED HEART... vs. GODHEAD?",
       "publishedAt": "2021-01-23T21:00:06Z",
-      "views": 8070,
+      "views": 8069,
       "candidates": [
         {
           "slug": "steam-1426300",
@@ -5242,7 +5242,7 @@
       "id": "h4fK31LookA",
       "title": "FTB Tutorial: Railcraft Tanks",
       "publishedAt": "2013-10-04T23:35:35Z",
-      "views": 4810,
+      "views": 4811,
       "candidates": [
         {
           "slug": "minecraft",
@@ -10077,7 +10077,7 @@
       "id": "mdPtgVwZcGg",
       "title": "FTB Tutorial: Assembly Table, Gates, and Facades",
       "publishedAt": "2013-10-03T23:02:00Z",
-      "views": 764,
+      "views": 763,
       "candidates": [
         {
           "slug": "minecraft",
@@ -10487,6 +10487,34 @@
       ]
     },
     {
+      "id": "DdnW91o-HO0",
+      "title": "INDOOR RAINFOREST AND BRIDGES! :: Zoo Tycoon 2: Creative Zoo :: 4",
+      "publishedAt": "2017-01-10T21:00:00Z",
+      "views": 600,
+      "candidates": [
+        {
+          "slug": "minecraft",
+          "name": "Minecraft",
+          "score": 86,
+          "reasons": [
+            "description mentions “minecraft”",
+            "tag family “minecraft”",
+            "tag names “minecraft”"
+          ]
+        },
+        {
+          "slug": "geoguessr",
+          "name": "Geoguessr",
+          "score": 84,
+          "reasons": [
+            "description mentions “geoguessr”",
+            "tag family “geoguessr”",
+            "tag names “geoguessr”"
+          ]
+        }
+      ]
+    },
+    {
       "id": "Fimj78cwbSU",
       "title": "Spelunky 2, Q.U.B.E 2, AI Dungeon  |  January 30th, 2021 Stream",
       "publishedAt": "2021-02-01T22:07:55Z",
@@ -10507,34 +10535,6 @@
           "score": 92,
           "reasons": [
             "title contains “spelunky”"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "DdnW91o-HO0",
-      "title": "INDOOR RAINFOREST AND BRIDGES! :: Zoo Tycoon 2: Creative Zoo :: 4",
-      "publishedAt": "2017-01-10T21:00:00Z",
-      "views": 599,
-      "candidates": [
-        {
-          "slug": "minecraft",
-          "name": "Minecraft",
-          "score": 86,
-          "reasons": [
-            "description mentions “minecraft”",
-            "tag family “minecraft”",
-            "tag names “minecraft”"
-          ]
-        },
-        {
-          "slug": "geoguessr",
-          "name": "Geoguessr",
-          "score": 84,
-          "reasons": [
-            "description mentions “geoguessr”",
-            "tag family “geoguessr”",
-            "tag names “geoguessr”"
           ]
         }
       ]
@@ -10969,6 +10969,23 @@
       ]
     },
     {
+      "id": "rEMy1xoZrTE",
+      "title": "FTB Tutorial: BuildCraft Pipes",
+      "publishedAt": "2013-10-03T00:11:53Z",
+      "views": 458,
+      "candidates": [
+        {
+          "slug": "minecraft",
+          "name": "Minecraft",
+          "score": 81,
+          "reasons": [
+            "tag family “minecraft”",
+            "tag names “minecraft”"
+          ]
+        }
+      ]
+    },
+    {
       "id": "gIs2H3U-toI",
       "title": "LIGHT AT THE END OF THE TUNNEL! :: Binding of Isaac: Genesis+ :: 9",
       "publishedAt": "2017-05-14T18:34:31Z",
@@ -11003,23 +11020,6 @@
       ]
     },
     {
-      "id": "rEMy1xoZrTE",
-      "title": "FTB Tutorial: BuildCraft Pipes",
-      "publishedAt": "2013-10-03T00:11:53Z",
-      "views": 457,
-      "candidates": [
-        {
-          "slug": "minecraft",
-          "name": "Minecraft",
-          "score": 81,
-          "reasons": [
-            "tag family “minecraft”",
-            "tag names “minecraft”"
-          ]
-        }
-      ]
-    },
-    {
       "id": "67xRxQvsbjc",
       "title": "HARAMBE'S HEROES! :: Zoo Tycoon 2: Creative Zoo :: 6",
       "publishedAt": "2017-01-17T20:00:01Z",
@@ -11042,6 +11042,41 @@
           "reasons": [
             "tag family “minecraft”",
             "tag names “minecraft”"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dcmG2mc7-Qk",
+      "title": "Rocket League w/ Dad :: Desert :: 2",
+      "publishedAt": "2016-06-22T15:38:59Z",
+      "views": 446,
+      "candidates": [
+        {
+          "slug": "minecraft",
+          "name": "Minecraft",
+          "score": 86,
+          "reasons": [
+            "description mentions “minecraft”",
+            "tag family “minecraft”",
+            "tag names “minecraft”"
+          ]
+        },
+        {
+          "slug": "geoguessr",
+          "name": "Geoguessr",
+          "score": 79,
+          "reasons": [
+            "tag family “geoguessr”",
+            "tag names “geoguessr”"
+          ]
+        },
+        {
+          "slug": "steam-105600",
+          "name": "Terraria",
+          "score": 78,
+          "reasons": [
+            "tag names “terraria”"
           ]
         }
       ]
@@ -11070,41 +11105,6 @@
             "description mentions “geoguessr”",
             "tag family “geoguessr”",
             "tag names “geoguessr”"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dcmG2mc7-Qk",
-      "title": "Rocket League w/ Dad :: Desert :: 2",
-      "publishedAt": "2016-06-22T15:38:59Z",
-      "views": 444,
-      "candidates": [
-        {
-          "slug": "minecraft",
-          "name": "Minecraft",
-          "score": 86,
-          "reasons": [
-            "description mentions “minecraft”",
-            "tag family “minecraft”",
-            "tag names “minecraft”"
-          ]
-        },
-        {
-          "slug": "geoguessr",
-          "name": "Geoguessr",
-          "score": 79,
-          "reasons": [
-            "tag family “geoguessr”",
-            "tag names “geoguessr”"
-          ]
-        },
-        {
-          "slug": "steam-105600",
-          "name": "Terraria",
-          "score": 78,
-          "reasons": [
-            "tag names “terraria”"
           ]
         }
       ]
@@ -13899,6 +13899,41 @@
       ]
     },
     {
+      "id": "9u0cyC-zgyg",
+      "title": "Rocket League w/ Dad! :: Spiderman :: 1",
+      "publishedAt": "2016-06-17T18:00:30Z",
+      "views": 155,
+      "candidates": [
+        {
+          "slug": "minecraft",
+          "name": "Minecraft",
+          "score": 86,
+          "reasons": [
+            "description mentions “minecraft”",
+            "tag family “minecraft”",
+            "tag names “minecraft”"
+          ]
+        },
+        {
+          "slug": "geoguessr",
+          "name": "Geoguessr",
+          "score": 79,
+          "reasons": [
+            "tag family “geoguessr”",
+            "tag names “geoguessr”"
+          ]
+        },
+        {
+          "slug": "steam-105600",
+          "name": "Terraria",
+          "score": 78,
+          "reasons": [
+            "tag names “terraria”"
+          ]
+        }
+      ]
+    },
+    {
       "id": "BL_zqWrLg4c",
       "title": "HELL FROZE OVER :: Ultimate Chicken Horse with Friends :: 4",
       "publishedAt": "2016-11-24T19:00:00Z",
@@ -13974,41 +14009,6 @@
           "score": 67,
           "reasons": [
             "description mentions “binding of isaac afterbirth”"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9u0cyC-zgyg",
-      "title": "Rocket League w/ Dad! :: Spiderman :: 1",
-      "publishedAt": "2016-06-17T18:00:30Z",
-      "views": 153,
-      "candidates": [
-        {
-          "slug": "minecraft",
-          "name": "Minecraft",
-          "score": 86,
-          "reasons": [
-            "description mentions “minecraft”",
-            "tag family “minecraft”",
-            "tag names “minecraft”"
-          ]
-        },
-        {
-          "slug": "geoguessr",
-          "name": "Geoguessr",
-          "score": 79,
-          "reasons": [
-            "tag family “geoguessr”",
-            "tag names “geoguessr”"
-          ]
-        },
-        {
-          "slug": "steam-105600",
-          "name": "Terraria",
-          "score": 78,
-          "reasons": [
-            "tag names “terraria”"
           ]
         }
       ]
@@ -21465,7 +21465,7 @@
       "id": "ChOVBro2sZw",
       "title": "Every Time I Get Hit, the Roguelike Changes",
       "publishedAt": "2023-03-26T18:00:05Z",
-      "views": 608514,
+      "views": 608524,
       "tags": [
         "olexa",
         "roguelike",
@@ -21486,7 +21486,7 @@
       "id": "ZZpwOlLLL6I",
       "title": "The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]",
       "publishedAt": "2020-01-26T18:00:07Z",
-      "views": 582394,
+      "views": 582398,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21570,7 +21570,7 @@
       "id": "Tw4-1FQbrfM",
       "title": "The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]",
       "publishedAt": "2021-10-23T17:00:16Z",
-      "views": 431870,
+      "views": 431872,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -21591,7 +21591,7 @@
       "id": "oqfKhyP1Wdk",
       "title": "I Made Roguelike Lockout Bingo, Except There’s a Twist…",
       "publishedAt": "2025-08-24T17:00:58Z",
-      "views": 360986,
+      "views": 361157,
       "tags": [
         "olexa",
         "lockout bingo",
@@ -21717,7 +21717,7 @@
       "id": "gp76eqyDlxs",
       "title": "Every Time I Get Hit, the Roguelike Changes through History",
       "publishedAt": "2023-11-05T16:00:33Z",
-      "views": 213450,
+      "views": 213451,
       "tags": [
         "olexa",
         "best roguelike games 2023",
@@ -21801,7 +21801,7 @@
       "id": "1ZGM_kbnabY",
       "title": "The ONLY Overwhelmingly Positive Deckbuilding Roguelikes",
       "publishedAt": "2024-06-24T16:00:04Z",
-      "views": 158613,
+      "views": 158628,
       "tags": [
         "olexa",
         "best roguelike games",
@@ -21843,7 +21843,7 @@
       "id": "x0U2egI8Tfw",
       "title": "My Illegal Cyberpunk Shop Is Finally Open",
       "publishedAt": "2026-10-31T19:13:41Z",
-      "views": 140898,
+      "views": 141179,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -21919,7 +21919,7 @@
       "id": "au9CptSolpI",
       "title": "Roguelike Deckbuilding... Tetris?",
       "publishedAt": "2025-01-23T16:00:03Z",
-      "views": 109466,
+      "views": 109469,
       "tags": [
         "olexa",
         "drop duchy",
@@ -21940,7 +21940,7 @@
       "id": "YBs2f62HU2A",
       "title": "Every Time I Get Hit, the Game Changes to a MORE OBSCURE Roguelike",
       "publishedAt": "2023-04-23T18:00:11Z",
-      "views": 104920,
+      "views": 104921,
       "tags": [
         "olexa",
         "roguelike",
@@ -22069,7 +22069,7 @@
       "id": "ImfjWGcKC4U",
       "title": "The BEST Top Down Shooter Roguelike in Years",
       "publishedAt": "2025-03-11T15:00:32Z",
-      "views": 88670,
+      "views": 88672,
       "tags": [
         "olexa",
         "odinfall game",
@@ -22176,7 +22176,7 @@
       "id": "jayeMzegTCA",
       "title": "😅",
       "publishedAt": "2026-06-18T11:11:03Z",
-      "views": 76593,
+      "views": 76597,
       "tags": [
         "olexa",
         "Pronoun palace",
@@ -22224,31 +22224,10 @@
       "url": "https://www.youtube.com/watch?v=DU-jf5atMcw"
     },
     {
-      "id": "bcUNM9U4Uug",
-      "title": "This INSANE Plants vs. Zombies Mod Shocked Me",
-      "publishedAt": "2025-10-22T16:01:12Z",
-      "views": 71582,
-      "tags": [
-        "olexa",
-        "pvz fusion",
-        "pvz fusion rh",
-        "fusion pvz",
-        "pvz fusions",
-        "pvz fusion mod",
-        "pvz fusion 3.0",
-        "pvz fusion 3.1",
-        "pvz fusion 2.5",
-        "mod pvz fusion",
-        "pvz 3 fusion",
-        "pvz fusion all fusions"
-      ],
-      "url": "https://www.youtube.com/watch?v=bcUNM9U4Uug"
-    },
-    {
       "id": "oSEoUIn7naY",
       "title": "The BEST Big Number Roguelike of 2026",
       "publishedAt": "2026-09-29T16:00:38Z",
-      "views": 71551,
+      "views": 71588,
       "tags": [
         "olexa",
         "DiceVaders",
@@ -22266,10 +22245,31 @@
       "url": "https://www.youtube.com/watch?v=oSEoUIn7naY"
     },
     {
+      "id": "bcUNM9U4Uug",
+      "title": "This INSANE Plants vs. Zombies Mod Shocked Me",
+      "publishedAt": "2025-10-22T16:01:12Z",
+      "views": 71586,
+      "tags": [
+        "olexa",
+        "pvz fusion",
+        "pvz fusion rh",
+        "fusion pvz",
+        "pvz fusions",
+        "pvz fusion mod",
+        "pvz fusion 3.0",
+        "pvz fusion 3.1",
+        "pvz fusion 2.5",
+        "mod pvz fusion",
+        "pvz 3 fusion",
+        "pvz fusion all fusions"
+      ],
+      "url": "https://www.youtube.com/watch?v=bcUNM9U4Uug"
+    },
+    {
       "id": "4IFnXJIKidE",
       "title": "My Favorite Idle Farming Game is Back",
       "publishedAt": "2026-11-03T21:32:33Z",
-      "views": 70858,
+      "views": 70927,
       "tags": [
         "olexa",
         "the farmer was replaced",
@@ -22290,7 +22290,7 @@
       "id": "-oEZgfxrRy4",
       "title": "Probably Stolen is Simply Excellent",
       "publishedAt": "2026-11-02T21:52:00Z",
-      "views": 69907,
+      "views": 70018,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -22331,7 +22331,7 @@
       "id": "5Fb9GwVlEpk",
       "title": "Slot Machine + Balatro = NEW ROGUELIKE",
       "publishedAt": "2025-10-09T16:00:07Z",
-      "views": 68537,
+      "views": 68554,
       "tags": [
         "olexa",
         "runeborn",
@@ -22362,7 +22362,7 @@
       "id": "degtt6xGswo",
       "title": "I'm Organizing Orgies.",
       "publishedAt": "2026-10-24T16:00:40Z",
-      "views": 65238,
+      "views": 65251,
       "tags": [
         "olexa",
         "Orgynizer",
@@ -22393,7 +22393,7 @@
       "id": "iybVcN31EiI",
       "title": "The Rise of “Gambling” Roguelikes",
       "publishedAt": "2025-06-15T16:01:10Z",
-      "views": 59413,
+      "views": 59432,
       "tags": [
         "olexa",
         "slot machine roguelike",
@@ -22414,7 +22414,7 @@
       "id": "d6LLOEqOs2E",
       "title": "Every Upgrade Has a Downside in This New Tactical Roguelike",
       "publishedAt": "2026-09-24T17:30:05Z",
-      "views": 59005,
+      "views": 59018,
       "tags": [
         "olexa",
         "deified",
@@ -22477,7 +22477,7 @@
       "id": "hqILq03uoo4",
       "title": "The King is Watching... Can You Build and Defend his City?",
       "publishedAt": "2025-07-21T16:01:15Z",
-      "views": 55591,
+      "views": 55594,
       "tags": [
         "olexa",
         "the king is watching game",
@@ -22498,7 +22498,7 @@
       "id": "y_udCZKYMc8",
       "title": "I've Been Hired to Find this Missing Person",
       "publishedAt": "2026-11-10T17:01:32Z",
-      "views": 54042,
+      "views": 54324,
       "tags": [
         "olexa",
         "hillthorn",
@@ -22537,10 +22537,31 @@
       "url": "https://www.youtube.com/watch?v=oXpTdgTnez4"
     },
     {
+      "id": "df-w0BtHXvk",
+      "title": "And NOW the Game Begins in Probably Stolen",
+      "publishedAt": "2026-11-04T20:21:14Z",
+      "views": 53007,
+      "tags": [
+        "olexa",
+        "Probably Stolen",
+        "Probably Stolen Cyberpunk Pawnshop Simulator",
+        "cyberpunk pawnshop simulator",
+        "pawn shop simulator",
+        "shop simulator",
+        "illegal shop simulator",
+        "cyberpunk simulator",
+        "indie game",
+        "indie games",
+        "simulation game",
+        "simulator games"
+      ],
+      "url": "https://www.youtube.com/watch?v=df-w0BtHXvk"
+    },
+    {
       "id": "xcjyFJOQ0ho",
       "title": "A Deckbuilding Roguelike All About Killing Your Own Cards (and pie)",
       "publishedAt": "2025-08-07T17:22:11Z",
-      "views": 52969,
+      "views": 52971,
       "tags": [
         "olexa",
         "the royal writ",
@@ -22579,31 +22600,10 @@
       "url": "https://www.youtube.com/watch?v=G9bCul3uMx8"
     },
     {
-      "id": "df-w0BtHXvk",
-      "title": "And NOW the Game Begins in Probably Stolen",
-      "publishedAt": "2026-11-04T20:21:14Z",
-      "views": 52887,
-      "tags": [
-        "olexa",
-        "Probably Stolen",
-        "Probably Stolen Cyberpunk Pawnshop Simulator",
-        "cyberpunk pawnshop simulator",
-        "pawn shop simulator",
-        "shop simulator",
-        "illegal shop simulator",
-        "cyberpunk simulator",
-        "indie game",
-        "indie games",
-        "simulation game",
-        "simulator games"
-      ],
-      "url": "https://www.youtube.com/watch?v=df-w0BtHXvk"
-    },
-    {
       "id": "mVAmApW560g",
       "title": "The Best Gambling Roguelike is FINALLY HERE! #ad",
       "publishedAt": "2024-08-05T18:00:34Z",
-      "views": 52476,
+      "views": 52479,
       "tags": [
         "olexa",
         "dungeons and degenerate gamblers",
@@ -22624,7 +22624,7 @@
       "id": "l06N3gpL5WY",
       "title": "This Mining Tower Defense Roguelike is SO GOOD",
       "publishedAt": "2025-04-28T15:01:19Z",
-      "views": 50399,
+      "views": 50400,
       "tags": [
         "olexa",
         "drill core",
@@ -22666,7 +22666,7 @@
       "id": "zH-k8v05zmU",
       "title": "H2O is Our New Way to Go in Probably Stolen",
       "publishedAt": "2026-11-05T21:05:01Z",
-      "views": 49039,
+      "views": 49144,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -22687,7 +22687,7 @@
       "id": "AHRUOLTf5bo",
       "title": "This Tiny Game Is Hiding Something Huge",
       "publishedAt": "2026-11-06T22:00:22Z",
-      "views": 48675,
+      "views": 48769,
       "tags": [
         "olexa",
         "PITH",
@@ -22729,7 +22729,7 @@
       "id": "Xi18G5kAEbU",
       "title": "I'm Building a Roguelike Cheese Factory",
       "publishedAt": "2026-10-26T18:49:21Z",
-      "views": 47490,
+      "views": 47506,
       "tags": [
         "olexa",
         "Cheese Factory",
@@ -22792,7 +22792,7 @@
       "id": "XNXU-8shZ58",
       "title": "We're Making BIG MOVES in Probably Stolen Today",
       "publishedAt": "2026-11-07T22:00:35Z",
-      "views": 43678,
+      "views": 43815,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -22876,7 +22876,7 @@
       "id": "v1Kqb6SU_gE",
       "title": "Yeah, I'm Playing Plants vs. Zombies Fan Games in 2025",
       "publishedAt": "2025-10-24T17:13:36Z",
-      "views": 41515,
+      "views": 41516,
       "tags": [
         "olexa",
         "pvz fusion",
@@ -22894,10 +22894,31 @@
       "url": "https://www.youtube.com/watch?v=v1Kqb6SU_gE"
     },
     {
+      "id": "MGP-10UKbZ0",
+      "title": "This Entire Game is One Giant Mystery",
+      "publishedAt": "2026-11-17T18:49:04Z",
+      "views": 41339,
+      "tags": [
+        "olexa",
+        "MONOMOON",
+        "MONOMOON gameplay",
+        "MONOMOON game",
+        "MONOMOON secrets",
+        "MONOMOON puzzles",
+        "MONOMOON walkthrough",
+        "MONOMOON review",
+        "Olexa",
+        "indie games",
+        "puzzle games",
+        "puzzle platformer"
+      ],
+      "url": "https://www.youtube.com/watch?v=MGP-10UKbZ0"
+    },
+    {
       "id": "hd3NPLLaF_A",
       "title": "This Roguelike is Scary... (It Has British Food)",
       "publishedAt": "2026-10-29T20:00:04Z",
-      "views": 40851,
+      "views": 40868,
       "tags": [
         "olexa",
         "Hungry Horrors",
@@ -22918,7 +22939,7 @@
       "id": "muqLqLK2q34",
       "title": "The Ikea Manual Roguelike Returns Once More",
       "publishedAt": "2025-12-01T18:21:47Z",
-      "views": 40326,
+      "views": 40329,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -22939,7 +22960,7 @@
       "id": "_NA5adP4bL4",
       "title": "I Think I'm Harboring a Criminal in Probably Stolen",
       "publishedAt": "2026-11-09T18:28:11Z",
-      "views": 39566,
+      "views": 39762,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -22960,7 +22981,7 @@
       "id": "xjhsH4icqAA",
       "title": "I CAUTIOUSLY Recommend this Slot Machine Roguelike... Here's Why",
       "publishedAt": "2024-02-18T16:00:39Z",
-      "views": 39216,
+      "views": 39218,
       "tags": [
         "olexa"
       ],
@@ -23009,27 +23030,6 @@
       "url": "https://www.youtube.com/watch?v=DAbLIQ8jmuU"
     },
     {
-      "id": "MGP-10UKbZ0",
-      "title": "This Entire Game is One Giant Mystery",
-      "publishedAt": "2026-11-17T18:49:04Z",
-      "views": 35958,
-      "tags": [
-        "olexa",
-        "MONOMOON",
-        "MONOMOON gameplay",
-        "MONOMOON game",
-        "MONOMOON secrets",
-        "MONOMOON puzzles",
-        "MONOMOON walkthrough",
-        "MONOMOON review",
-        "Olexa",
-        "indie games",
-        "puzzle games",
-        "puzzle platformer"
-      ],
-      "url": "https://www.youtube.com/watch?v=MGP-10UKbZ0"
-    },
-    {
       "id": "T4t1tP86CEw",
       "title": "WHEEL OF ISAAC 2! (LIVE)",
       "publishedAt": "2017-09-24T16:11:38Z",
@@ -23061,7 +23061,7 @@
       "id": "Rx3PJgB9pC4",
       "title": "This is a Counterfeit McRib...",
       "publishedAt": "2026-11-12T21:00:19Z",
-      "views": 33498,
+      "views": 33715,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -23090,7 +23090,7 @@
       "id": "60ga9HKATtA",
       "title": "They Call Me Cyberpunk Jesus Because I'm Turning Water into Wine",
       "publishedAt": "2026-11-06T18:36:38Z",
-      "views": 32205,
+      "views": 32278,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -23153,7 +23153,7 @@
       "id": "LXvydd5gWAs",
       "title": "The Dicebuilding Roguelike Where You BET BIG or... burn",
       "publishedAt": "2025-10-10T16:00:40Z",
-      "views": 31666,
+      "views": 31671,
       "tags": [
         "olexa",
         "dicealot game",
@@ -23237,7 +23237,7 @@
       "id": "d84g4fO-HVc",
       "title": "I Asked For Help, and 5000 of You Answered",
       "publishedAt": "2026-08-24T20:00:04Z",
-      "views": 30750,
+      "views": 30751,
       "tags": [
         "olexa"
       ],
@@ -23289,7 +23289,7 @@
       "id": "lAqAPlU6X2c",
       "title": "Top 10 Indie Games of 2025 pt. 2 #olexa #gaming #indiegames #goty #roguelike",
       "publishedAt": "2026-01-01T19:35:51Z",
-      "views": 29656,
+      "views": 29657,
       "tags": [
         "olexa"
       ],
@@ -23592,31 +23592,10 @@
       "url": "https://www.youtube.com/watch?v=qlYuAvLyNrw"
     },
     {
-      "id": "Q2qkxfUbUWg",
-      "title": "Every Time I Get Hit, the Roguelike Changes to the Next Letter in the Alphabet",
-      "publishedAt": "2024-03-18T15:00:31Z",
-      "views": 22536,
-      "tags": [
-        "olexa",
-        "best roguelike games 2023",
-        "best roguelike games of all time",
-        "best action roguelikes games",
-        "roguelike",
-        "enter the gungeon",
-        "roguelite",
-        "roguelikes",
-        "roguelike games",
-        "roguelike design",
-        "slay the spire",
-        "peggle roguelike"
-      ],
-      "url": "https://www.youtube.com/watch?v=Q2qkxfUbUWg"
-    },
-    {
       "id": "krNHocGEPOE",
       "title": "I'm Back to Water in Probably Stolen",
       "publishedAt": "2026-11-16T21:30:13Z",
-      "views": 22386,
+      "views": 23001,
       "tags": [
         "olexa",
         "Probably Stolen",
@@ -23634,10 +23613,31 @@
       "url": "https://www.youtube.com/watch?v=krNHocGEPOE"
     },
     {
+      "id": "Q2qkxfUbUWg",
+      "title": "Every Time I Get Hit, the Roguelike Changes to the Next Letter in the Alphabet",
+      "publishedAt": "2024-03-18T15:00:31Z",
+      "views": 22538,
+      "tags": [
+        "olexa",
+        "best roguelike games 2023",
+        "best roguelike games of all time",
+        "best action roguelikes games",
+        "roguelike",
+        "enter the gungeon",
+        "roguelite",
+        "roguelikes",
+        "roguelike games",
+        "roguelike design",
+        "slay the spire",
+        "peggle roguelike"
+      ],
+      "url": "https://www.youtube.com/watch?v=Q2qkxfUbUWg"
+    },
+    {
       "id": "4_tFhYzFo1w",
       "title": "I'm Sacrificing Children to the Dark One in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-26T21:00:06Z",
-      "views": 22354,
+      "views": 22360,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23679,7 +23679,7 @@
       "id": "P3Y1HTIIYuA",
       "title": "I Destroyed the Developer of this Pokemon Roguelike",
       "publishedAt": "2026-06-16T10:54:46Z",
-      "views": 21402,
+      "views": 21404,
       "tags": [
         "olexa",
         "Pokemon",
@@ -23700,7 +23700,7 @@
       "id": "st2prXV9pPQ",
       "title": "Can Roguelikes be \"Cozy Games\"?",
       "publishedAt": "2025-06-04T16:01:25Z",
-      "views": 21301,
+      "views": 21302,
       "tags": [
         "olexa",
         "roguelike",
@@ -23742,7 +23742,7 @@
       "id": "WRrWO_tUb3s",
       "title": "A Turn Based Tactical... Rhythm Roguelike?",
       "publishedAt": "2026-05-07T16:00:52Z",
-      "views": 21056,
+      "views": 21057,
       "tags": [
         "wardrum game",
         "wardrum rhythm game",
@@ -23844,7 +23844,7 @@
       "id": "UFb--1VboKA",
       "title": "I Created a New YouTube Channel",
       "publishedAt": "2026-05-23T14:00:32Z",
-      "views": 19553,
+      "views": 19554,
       "tags": [
         "olexa"
       ],
@@ -23875,7 +23875,7 @@
       "id": "dy8-PhCg7yg",
       "title": "Getting My Feet Wet and My Hands Dirty in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-04T17:01:12Z",
-      "views": 19410,
+      "views": 19413,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -23916,6 +23916,27 @@
       "views": 19208,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=C7kDFFQf8Vo"
+    },
+    {
+      "id": "vEMLj1HNhFE",
+      "title": "This is the Lost Episode (sorry)",
+      "publishedAt": "2026-11-17T22:07:21Z",
+      "views": 18805,
+      "tags": [
+        "olexa",
+        "Probably Stolen",
+        "Probably Stolen Cyberpunk Pawnshop Simulator",
+        "cyberpunk pawnshop simulator",
+        "pawn shop simulator",
+        "shop simulator",
+        "illegal shop simulator",
+        "cyberpunk simulator",
+        "indie game",
+        "indie games",
+        "simulation game",
+        "simulator games"
+      ],
+      "url": "https://www.youtube.com/watch?v=vEMLj1HNhFE"
     },
     {
       "id": "d5wbYQziZB8",
@@ -24026,7 +24047,7 @@
       "id": "-2xUvaj2Rjw",
       "title": "Boardgames are Roguelikes… here’s why",
       "publishedAt": "2025-07-27T17:20:41Z",
-      "views": 18094,
+      "views": 18096,
       "tags": [
         "olexa",
         "roguelikes",
@@ -24078,32 +24099,11 @@
       "id": "HvKVUTber84",
       "title": "GUILLO4N— it's just the zaratana fight",
       "publishedAt": "2026-04-17T16:00:26Z",
-      "views": 17832,
+      "views": 17836,
       "tags": [
         "olexa"
       ],
       "url": "https://www.youtube.com/watch?v=HvKVUTber84"
-    },
-    {
-      "id": "vEMLj1HNhFE",
-      "title": "This is the Lost Episode (sorry)",
-      "publishedAt": "2026-11-17T22:07:21Z",
-      "views": 17768,
-      "tags": [
-        "olexa",
-        "Probably Stolen",
-        "Probably Stolen Cyberpunk Pawnshop Simulator",
-        "cyberpunk pawnshop simulator",
-        "pawn shop simulator",
-        "shop simulator",
-        "illegal shop simulator",
-        "cyberpunk simulator",
-        "indie game",
-        "indie games",
-        "simulation game",
-        "simulator games"
-      ],
-      "url": "https://www.youtube.com/watch?v=vEMLj1HNhFE"
     },
     {
       "id": "UQKnQl0GZX8",
@@ -24214,7 +24214,7 @@
       "id": "7Mpt5-HnmtA",
       "title": "If You Were Concerned I Learned How to Read, Don't Worry",
       "publishedAt": "2025-12-11T20:00:07Z",
-      "views": 16695,
+      "views": 16696,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -24376,7 +24376,7 @@
       "id": "XKMYhryiHx4",
       "title": "I should NOT be laughing",
       "publishedAt": "2026-07-22T13:00:18Z",
-      "views": 14992,
+      "views": 14993,
       "tags": [
         "olexa"
       ],
@@ -24538,7 +24538,7 @@
       "id": "0umcw7qx2LA",
       "title": "HARDEST ISAAC MOD EVER...  |  Binding of Isaac BEGGARS' PURGATORY",
       "publishedAt": "2020-08-07T17:00:00Z",
-      "views": 13502,
+      "views": 13503,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -24580,7 +24580,7 @@
       "id": "DHe4YOqCyT0",
       "title": "1 Hour of Pain in Uncle Chop's Rocket Shop",
       "publishedAt": "2025-12-18T17:00:19Z",
-      "views": 13307,
+      "views": 13309,
       "tags": [
         "olexa",
         "uncle chops rocket shop",
@@ -24622,6 +24622,27 @@
       "views": 13037,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=E-Z1Mfyi76U"
+    },
+    {
+      "id": "4necaZf1mso",
+      "title": "This Puzzle Game is Hiding Something From Us...",
+      "publishedAt": "2026-11-18T17:00:22Z",
+      "views": 12848,
+      "tags": [
+        "olexa",
+        "MONOMOON",
+        "MONOMOON gameplay",
+        "MONOMOON game",
+        "MONOMOON secrets",
+        "MONOMOON puzzles",
+        "MONOMOON walkthrough",
+        "MONOMOON review",
+        "Olexa",
+        "indie games",
+        "puzzle games",
+        "puzzle platformer"
+      ],
+      "url": "https://www.youtube.com/watch?v=4necaZf1mso"
     },
     {
       "id": "ZtuI7jAsVrM",
@@ -25472,27 +25493,6 @@
       "url": "https://www.youtube.com/watch?v=3x9XjyW-hEA"
     },
     {
-      "id": "4necaZf1mso",
-      "title": "This Puzzle Game is Hiding Something From Us...",
-      "publishedAt": "2026-11-18T17:00:22Z",
-      "views": 9356,
-      "tags": [
-        "olexa",
-        "MONOMOON",
-        "MONOMOON gameplay",
-        "MONOMOON game",
-        "MONOMOON secrets",
-        "MONOMOON puzzles",
-        "MONOMOON walkthrough",
-        "MONOMOON review",
-        "Olexa",
-        "indie games",
-        "puzzle games",
-        "puzzle platformer"
-      ],
-      "url": "https://www.youtube.com/watch?v=4necaZf1mso"
-    },
-    {
       "id": "yaGxJPd9o-c",
       "title": "Let's ignore Isaac and talk about snacks :: Modded Isaac: Eden Streaking :: 11",
       "publishedAt": "2018-04-20T17:00:14Z",
@@ -25822,7 +25822,7 @@
       "id": "Bz3CduuYIRY",
       "title": "SACRED HEART... vs. GODHEAD?",
       "publishedAt": "2021-01-23T21:00:06Z",
-      "views": 8070,
+      "views": 8069,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -26082,7 +26082,7 @@
       "id": "iECsHXoQTxg",
       "title": "IPECAC SUCCESS! :: Isaac True Co-op with Ryan :: 3",
       "publishedAt": "2018-02-08T18:00:03Z",
-      "views": 7524,
+      "views": 7526,
       "tags": [],
       "url": "https://www.youtube.com/watch?v=iECsHXoQTxg"
     },
@@ -27676,7 +27676,7 @@
       "id": "rVXbdPOwONQ",
       "title": "Do NOT Miss these Budget Roguelikes Under $10",
       "publishedAt": "2022-08-27T18:00:23Z",
-      "views": 4960,
+      "views": 4961,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -27867,7 +27867,7 @@
       "id": "h4fK31LookA",
       "title": "FTB Tutorial: Railcraft Tanks",
       "publishedAt": "2013-10-04T23:35:35Z",
-      "views": 4810,
+      "views": 4811,
       "tags": [
         "minecraft",
         "mine",
@@ -28207,7 +28207,7 @@
       "id": "KeTTu04GXzc",
       "title": "Wait, Lego Fortnite is Kinda Great",
       "publishedAt": "2023-12-16T20:00:06Z",
-      "views": 4466,
+      "views": 4467,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -28315,7 +28315,7 @@
       "id": "_1OKQyz9bdk",
       "title": "Definitely NOT Fortnite Battle Royale with @orbitalpotato  |  1",
       "publishedAt": "2020-12-21T22:00:05Z",
-      "views": 4368,
+      "views": 4369,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -28385,7 +28385,7 @@
       "id": "mbXkgT_v5zM",
       "title": "TACKLING REDACTLE!  |  Wordle Variants with Tyler",
       "publishedAt": "2022-08-03T21:00:33Z",
-      "views": 4322,
+      "views": 4326,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -28399,7 +28399,7 @@
       "id": "2JjwuewV2uE",
       "title": "Understanding Creativity in Content Creation (w/ @orbitalpotato )",
       "publishedAt": "2026-01-14T17:00:05Z",
-      "views": 4295,
+      "views": 4297,
       "tags": [
         "olexa"
       ],
@@ -29729,7 +29729,7 @@
       "id": "fKHX73Puo3c",
       "title": "FAST PACED DICE ACTION!  |  Dice Catcher (GMTK Game Jam 2022)",
       "publishedAt": "2022-07-24T21:00:17Z",
-      "views": 3185,
+      "views": 3186,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -30554,7 +30554,7 @@
       "id": "DiSxiq4FfIo",
       "title": "It's Fortnite but with Words with @orbitalpotato",
       "publishedAt": "2023-05-06T18:00:04Z",
-      "views": 2630,
+      "views": 2632,
       "tags": [
         "olexa"
       ],
@@ -30755,7 +30755,7 @@
       "id": "omHQAMpLlV0",
       "title": "Do I still got it?  |  Members First: September 2025",
       "publishedAt": "2025-12-23T16:38:10Z",
-      "views": 2541,
+      "views": 2542,
       "tags": [
         "olexa"
       ],
@@ -32486,7 +32486,7 @@
       "id": "k2BEdXNdNWI",
       "title": "VARIABLES, TYPES, AND STRINGS!  |  Olexa Python Coding Tutorials  | 1",
       "publishedAt": "2019-07-21T16:30:02Z",
-      "views": 1349,
+      "views": 1350,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -33243,7 +33243,7 @@
       "id": "qW5vdnzzA-8",
       "title": "IT WAS THE BEST OF POGS.......  |  Definitely NOT Fortnite Battle Royale with @orbitalpotato   |  5",
       "publishedAt": "2021-01-05T18:00:21Z",
-      "views": 1136,
+      "views": 1138,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -34863,7 +34863,7 @@
       "id": "mdPtgVwZcGg",
       "title": "FTB Tutorial: Assembly Table, Gates, and Facades",
       "publishedAt": "2013-10-03T23:02:00Z",
-      "views": 764,
+      "views": 763,
       "tags": [
         "minecraft",
         "mine",
@@ -35311,7 +35311,7 @@
       "id": "GFQdMo0Ywwg",
       "title": "I DO NOT BELIEVE IT...  |  Rocket League with @orbitalpotato  |  3",
       "publishedAt": "2020-12-14T20:00:03Z",
-      "views": 620,
+      "views": 622,
       "tags": [
         "yt:quality=high",
         "olexa",
@@ -35493,21 +35493,10 @@
       "url": "https://www.youtube.com/watch?v=0_GBsdlK2f8"
     },
     {
-      "id": "Fimj78cwbSU",
-      "title": "Spelunky 2, Q.U.B.E 2, AI Dungeon  |  January 30th, 2021 Stream",
-      "publishedAt": "2021-02-01T22:07:55Z",
-      "views": 599,
-      "tags": [
-        "twitch",
-        "games"
-      ],
-      "url": "https://www.youtube.com/watch?v=Fimj78cwbSU"
-    },
-    {
       "id": "DdnW91o-HO0",
       "title": "INDOOR RAINFOREST AND BRIDGES! :: Zoo Tycoon 2: Creative Zoo :: 4",
       "publishedAt": "2017-01-10T21:00:00Z",
-      "views": 599,
+      "views": 600,
       "tags": [
         "yt:quality=high",
         "minecraft",
@@ -35523,6 +35512,17 @@
         "games"
       ],
       "url": "https://www.youtube.com/watch?v=DdnW91o-HO0"
+    },
+    {
+      "id": "Fimj78cwbSU",
+      "title": "Spelunky 2, Q.U.B.E 2, AI Dungeon  |  January 30th, 2021 Stream",
+      "publishedAt": "2021-02-01T22:07:55Z",
+      "views": 599,
+      "tags": [
+        "twitch",
+        "games"
+      ],
+      "url": "https://www.youtube.com/watch?v=Fimj78cwbSU"
     },
     {
       "id": "_I92X8CGjF4",
@@ -36284,6 +36284,27 @@
       "url": "https://www.youtube.com/watch?v=tDuWOG3TuFc"
     },
     {
+      "id": "rEMy1xoZrTE",
+      "title": "FTB Tutorial: BuildCraft Pipes",
+      "publishedAt": "2013-10-03T00:11:53Z",
+      "views": 458,
+      "tags": [
+        "yt:stretch=16:9",
+        "minecraft",
+        "mine",
+        "craft",
+        "feed",
+        "the",
+        "beast",
+        "feedthebeast",
+        "direwolf20",
+        "bluexpehos",
+        "antvenom",
+        "vintagebeef"
+      ],
+      "url": "https://www.youtube.com/watch?v=rEMy1xoZrTE"
+    },
+    {
       "id": "gIs2H3U-toI",
       "title": "LIGHT AT THE END OF THE TUNNEL! :: Binding of Isaac: Genesis+ :: 9",
       "publishedAt": "2017-05-14T18:34:31Z",
@@ -36303,27 +36324,6 @@
         "let's"
       ],
       "url": "https://www.youtube.com/watch?v=gIs2H3U-toI"
-    },
-    {
-      "id": "rEMy1xoZrTE",
-      "title": "FTB Tutorial: BuildCraft Pipes",
-      "publishedAt": "2013-10-03T00:11:53Z",
-      "views": 457,
-      "tags": [
-        "yt:stretch=16:9",
-        "minecraft",
-        "mine",
-        "craft",
-        "feed",
-        "the",
-        "beast",
-        "feedthebeast",
-        "direwolf20",
-        "bluexpehos",
-        "antvenom",
-        "vintagebeef"
-      ],
-      "url": "https://www.youtube.com/watch?v=rEMy1xoZrTE"
     },
     {
       "id": "67xRxQvsbjc",
@@ -36358,6 +36358,27 @@
       "url": "https://www.youtube.com/watch?v=wiJcUzrcYGU"
     },
     {
+      "id": "dcmG2mc7-Qk",
+      "title": "Rocket League w/ Dad :: Desert :: 2",
+      "publishedAt": "2016-06-22T15:38:59Z",
+      "views": 446,
+      "tags": [
+        "yt:quality=high",
+        "minecraft",
+        "mine",
+        "craft",
+        "feedthebeast",
+        "direwolf20",
+        "modspotlights",
+        "isaac",
+        "northernlion",
+        "maggie",
+        "judas",
+        "the"
+      ],
+      "url": "https://www.youtube.com/watch?v=dcmG2mc7-Qk"
+    },
+    {
       "id": "WLUWnqAN6EM",
       "title": "MONKEY ISLAND :: Zoo Tycoon 2: Creative Zoo :: 5",
       "publishedAt": "2017-01-14T21:00:01Z",
@@ -36377,27 +36398,6 @@
         "games"
       ],
       "url": "https://www.youtube.com/watch?v=WLUWnqAN6EM"
-    },
-    {
-      "id": "dcmG2mc7-Qk",
-      "title": "Rocket League w/ Dad :: Desert :: 2",
-      "publishedAt": "2016-06-22T15:38:59Z",
-      "views": 444,
-      "tags": [
-        "yt:quality=high",
-        "minecraft",
-        "mine",
-        "craft",
-        "feedthebeast",
-        "direwolf20",
-        "modspotlights",
-        "isaac",
-        "northernlion",
-        "maggie",
-        "judas",
-        "the"
-      ],
-      "url": "https://www.youtube.com/watch?v=dcmG2mc7-Qk"
     },
     {
       "id": "lxco8I7kuPY",
@@ -39446,6 +39446,27 @@
       "url": "https://www.youtube.com/watch?v=-w_9BekHghA"
     },
     {
+      "id": "9u0cyC-zgyg",
+      "title": "Rocket League w/ Dad! :: Spiderman :: 1",
+      "publishedAt": "2016-06-17T18:00:30Z",
+      "views": 155,
+      "tags": [
+        "yt:quality=high",
+        "minecraft",
+        "mine",
+        "craft",
+        "feedthebeast",
+        "direwolf20",
+        "modspotlights",
+        "isaac",
+        "northernlion",
+        "maggie",
+        "judas",
+        "the"
+      ],
+      "url": "https://www.youtube.com/watch?v=9u0cyC-zgyg"
+    },
+    {
       "id": "BL_zqWrLg4c",
       "title": "HELL FROZE OVER :: Ultimate Chicken Horse with Friends :: 4",
       "publishedAt": "2016-11-24T19:00:00Z",
@@ -39486,27 +39507,6 @@
         "user"
       ],
       "url": "https://www.youtube.com/watch?v=sWDrcXs7xBI"
-    },
-    {
-      "id": "9u0cyC-zgyg",
-      "title": "Rocket League w/ Dad! :: Spiderman :: 1",
-      "publishedAt": "2016-06-17T18:00:30Z",
-      "views": 153,
-      "tags": [
-        "yt:quality=high",
-        "minecraft",
-        "mine",
-        "craft",
-        "feedthebeast",
-        "direwolf20",
-        "modspotlights",
-        "isaac",
-        "northernlion",
-        "maggie",
-        "judas",
-        "the"
-      ],
-      "url": "https://www.youtube.com/watch?v=9u0cyC-zgyg"
     },
     {
       "id": "s77rEwu85oM",
