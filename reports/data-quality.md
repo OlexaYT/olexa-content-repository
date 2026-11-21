@@ -1,81 +1,81 @@
 # Olexa Data Quality V2 audit
 
-Generated: 2026-11-21T11:12:12.364Z
+Generated: 2026-11-21T18:00:58.630Z
 
 ## Coverage
 
-- Before (Steam/manual rules): **3,175 / 6,333 (50.1%)**
-- After Data Quality V2: **4,994 / 6,333 (78.9%)**
-- Newly identified through metadata inheritance: **1,819**
+- Before (Steam/manual rules): **3,176 / 6,334 (50.1%)**
+- After Data Quality V2: **4,994 / 6,334 (78.8%)**
+- Newly identified through metadata inheritance: **1,818**
 - Canonical games: **767**
-- Unidentified: **1,339**
-- Ambiguous: **661**
+- Unidentified: **1,340**
+- Ambiguous: **662**
 - Possible duplicate mapping groups: **8**
 - Malformed canonical names: **0**
 
 ## Identification sources
 
-- steam: 3,063
-- unidentified: 1,339
-- title: 781
-- metadata: 759
+- steam: 3,062
+- unidentified: 1,340
+- title: 782
+- metadata: 758
 - tags: 188
 - description: 121
 - steam+curated: 71
-- rule: 11
+- rule: 12
 
 ## Highest-view unidentified videos
 
-- [101 Facts and Tips for The Binding of Isaac: Afterbirth+](https://www.youtube.com/watch?v=LIsF0Ln8djg) — 822,530 views (2018-05-19)
-- [Every Time I Get Hit, the Roguelike Changes](https://www.youtube.com/watch?v=ChOVBro2sZw) — 608,575 views (2023-03-26)
-- [The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]](https://www.youtube.com/watch?v=ZZpwOlLLL6I) — 582,413 views (2020-01-26)
+- [101 Facts and Tips for The Binding of Isaac: Afterbirth+](https://www.youtube.com/watch?v=LIsF0Ln8djg) — 822,533 views (2018-05-19)
+- [Every Time I Get Hit, the Roguelike Changes](https://www.youtube.com/watch?v=ChOVBro2sZw) — 608,582 views (2023-03-26)
+- [The HISTORY of the Binding of Isaac!  |  [ Original to Repentance ]](https://www.youtube.com/watch?v=ZZpwOlLLL6I) — 582,415 views (2020-01-26)
 - [TOP 10 WORST ITEMS IN AFTERBIRTH + !](https://www.youtube.com/watch?v=eeNgoS0Lu44) — 563,758 views (2017-04-26)
 - [TOP 20 SOY MILK SYNERGIES IN AFTERBIRTH+!](https://www.youtube.com/watch?v=M1ZWdbiSKbE) — 531,205 views (2018-05-26)
 - [TOP 10 SYNERGIES FOR 'THE FORGOTTEN'!](https://www.youtube.com/watch?v=cq7WCiJluBs) — 434,281 views (2018-05-06)
-- [The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]](https://www.youtube.com/watch?v=Tw4-1FQbrfM) — 431,878 views (2021-10-23)
-- [I Made Roguelike Lockout Bingo, Except There’s a Twist…](https://www.youtube.com/watch?v=oqfKhyP1Wdk) — 362,301 views (2025-08-24)
+- [The HISTORY of the Keeper in the Binding of Isaac!  [Original to Repentance]](https://www.youtube.com/watch?v=Tw4-1FQbrfM) — 431,879 views (2021-10-23)
+- [I Made Roguelike Lockout Bingo, Except There’s a Twist…](https://www.youtube.com/watch?v=oqfKhyP1Wdk) — 362,382 views (2025-08-24)
 - [101 MORE Facts about The Binding of Isaac AFTERBIRTH+!](https://www.youtube.com/watch?v=JJMcsstCddQ) — 326,963 views (2020-05-24)
 - [HOW TO BREAK THE GAME! [Binding of Isaac Afterbirth+ In Depth Guide] **OUTDATED FOR REPENTANCE**](https://www.youtube.com/watch?v=CTweoydwm3w) — 308,550 views (2017-06-14)
-- [The BEST BRIMSTONE SYNERGIES in the Binding of Isaac: REPENTANCE!](https://www.youtube.com/watch?v=Fxjtm3JK7rI) — 276,453 views (2021-05-09)
+- [The BEST BRIMSTONE SYNERGIES in the Binding of Isaac: REPENTANCE!](https://www.youtube.com/watch?v=Fxjtm3JK7rI) — 276,454 views (2021-05-09)
 - [TOP 10 MOM'S KNIFE SYNERGIES in AFTERBIRTH+!](https://www.youtube.com/watch?v=YT7u75KCUg4) — 236,261 views (2019-03-30)
 - [How to Use the Debug Console in the Binding of Isaac AFTERBIRTH +! **OUTDATED**](https://www.youtube.com/watch?v=4r-D5jrWlwU) — 220,157 views (2017-02-03)
 - [Every Time I Get Hit, the Roguelike Changes through History](https://www.youtube.com/watch?v=gp76eqyDlxs) — 213,459 views (2023-11-05)
 - [Can you Beat The Password Game?](https://www.youtube.com/watch?v=RDHhGhOn7EE) — 207,289 views (2023-07-01)
-- [Every Time I Get Hit, MORE Roguelikes Change](https://www.youtube.com/watch?v=_IyHzB9MxVc) — 195,624 views (2023-04-05)
+- [Every Time I Get Hit, MORE Roguelikes Change](https://www.youtube.com/watch?v=_IyHzB9MxVc) — 195,625 views (2023-04-05)
 - [TOP 15 DEVIL DEAL ITEMS in The Binding of Isaac: AFTERBIRTH+!](https://www.youtube.com/watch?v=6_y6U4LAbrI) — 174,129 views (2019-07-27)
-- [The ONLY Overwhelmingly Positive Deckbuilding Roguelikes](https://www.youtube.com/watch?v=1ZGM_kbnabY) — 158,712 views (2024-06-24)
-- [This is the BEST Tactical Roguelike of 2023](https://www.youtube.com/watch?v=kTu_6jpQyeM) — 151,685 views (2023-04-03)
-- [My Illegal Cyberpunk Shop Is Finally Open](https://www.youtube.com/watch?v=x0U2egI8Tfw) — 142,340 views (2026-10-31)
+- [The ONLY Overwhelmingly Positive Deckbuilding Roguelikes](https://www.youtube.com/watch?v=1ZGM_kbnabY) — 158,715 views (2024-06-24)
+- [This is the BEST Tactical Roguelike of 2023](https://www.youtube.com/watch?v=kTu_6jpQyeM) — 151,686 views (2023-04-03)
+- [My Illegal Cyberpunk Shop Is Finally Open](https://www.youtube.com/watch?v=x0U2egI8Tfw) — 142,566 views (2026-10-31)
 - [HOW TO GET -1 FIRE RATE! EVERYTHING ABOUT TEARS! :: In Depth Isaac :: 1](https://www.youtube.com/watch?v=LWCQKRjHooo) — 125,431 views (2017-09-03)
 - [it's that mod you all want me to play](https://www.youtube.com/watch?v=j5r6jvsxBpU) — 118,554 views (2018-04-03)
-- [WHAT IS A ROGUELIKE? [Roguelike vs Roguelite]](https://www.youtube.com/watch?v=koxMgiQhZf4) — 113,166 views (2018-07-14)
-- [Roguelike Deckbuilding... Tetris?](https://www.youtube.com/watch?v=au9CptSolpI) — 109,487 views (2025-01-23)
-- [Every Time I Get Hit, the Game Changes to a MORE OBSCURE Roguelike](https://www.youtube.com/watch?v=YBs2f62HU2A) — 104,928 views (2023-04-23)
-- [The TOP 10 Indie Games of 2024](https://www.youtube.com/watch?v=ROeyrCws0ow) — 100,571 views (2024-12-31)
+- [WHAT IS A ROGUELIKE? [Roguelike vs Roguelite]](https://www.youtube.com/watch?v=koxMgiQhZf4) — 113,168 views (2018-07-14)
+- [Roguelike Deckbuilding... Tetris?](https://www.youtube.com/watch?v=au9CptSolpI) — 109,488 views (2025-01-23)
+- [Every Time I Get Hit, the Game Changes to a MORE OBSCURE Roguelike](https://www.youtube.com/watch?v=YBs2f62HU2A) — 104,929 views (2023-04-23)
+- [The TOP 10 Indie Games of 2024](https://www.youtube.com/watch?v=ROeyrCws0ow) — 100,572 views (2024-12-31)
 - [HOW TO GET 25,000 DAMAGE! :: In Depth Isaac: Damage](https://www.youtube.com/watch?v=b8gA10W0gYk) — 99,521 views (2018-01-06)
 - [TOP 10 ITEMS ADDED IN AFTERBIRTH + !](https://www.youtube.com/watch?v=-upPAzrLbbQ) — 96,896 views (2017-02-27)
 - [25 Facts You May Not Have Known About the Binding of Isaac AFTERBIRTH](https://www.youtube.com/watch?v=yVI8Tul6nzY) — 92,135 views (2016-06-14)
-- [RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...](https://www.youtube.com/watch?v=j3Oa3ClY7nc) — 91,664 views (2021-06-26)
+- [RANKING ALL 34 CHARACTERS IN THE BINDING OF ISAAC: REPENTANCE...](https://www.youtube.com/watch?v=j3Oa3ClY7nc) — 91,665 views (2021-06-26)
 - [I'm Not Proud of My Videos](https://www.youtube.com/watch?v=pVG_5qYpSSQ) — 89,528 views (2025-11-20)
-- [The BEST Top Down Shooter Roguelike in Years](https://www.youtube.com/watch?v=ImfjWGcKC4U) — 88,685 views (2025-03-11)
+- [The BEST Top Down Shooter Roguelike in Years](https://www.youtube.com/watch?v=ImfjWGcKC4U) — 88,686 views (2025-03-11)
 - [EVERYTHING TO KNOW ABOUT EDEN! :: In Depth Isaac :: 2](https://www.youtube.com/watch?v=Y46lOOD-20E) — 83,856 views (2017-09-23)
-- [If You Like These Roguelikes, You’ll Love These Replacements](https://www.youtube.com/watch?v=tO3fLhs59x4) — 83,175 views (2023-10-21)
+- [If You Like These Roguelikes, You’ll Love These Replacements](https://www.youtube.com/watch?v=tO3fLhs59x4) — 83,176 views (2023-10-21)
 - [TOP 10 LUMP OF COAL SYNERGIES!](https://www.youtube.com/watch?v=YemIJJec3zU) — 80,018 views (2017-12-30)
-- [This is the Ultimate 200+ Roguelike Ranking](https://www.youtube.com/watch?v=ljcXEJxreWA) — 78,323 views (2023-04-28)
+- [This is the Ultimate 200+ Roguelike Ranking](https://www.youtube.com/watch?v=ljcXEJxreWA) — 78,325 views (2023-04-28)
 - [TOP 10 ORBITALS IN AFTERBIRTH+!](https://www.youtube.com/watch?v=DXNx55Izptg) — 77,486 views (2018-11-11)
-- [😅](https://www.youtube.com/watch?v=jayeMzegTCA) — 76,638 views (2026-06-18)
+- [😅](https://www.youtube.com/watch?v=jayeMzegTCA) — 76,643 views (2026-06-18)
 - [TOP 10 ITEMS TO LOOK FORWARD TO IN REPENTANCE!](https://www.youtube.com/watch?v=CtXj2aMEzv0) — 74,195 views (2020-06-07)
 - [THE WHEEL OF ISAAC!](https://www.youtube.com/watch?v=DU-jf5atMcw) — 71,940 views (2017-09-16)
-- [The BEST Big Number Roguelike of 2026](https://www.youtube.com/watch?v=oSEoUIn7naY) — 71,789 views (2026-09-29)
-- [This INSANE Plants vs. Zombies Mod Shocked Me](https://www.youtube.com/watch?v=bcUNM9U4Uug) — 71,604 views (2025-10-22)
-- [My Favorite Idle Farming Game is Back](https://www.youtube.com/watch?v=4IFnXJIKidE) — 71,230 views (2026-11-03)
-- [Probably Stolen is Simply Excellent](https://www.youtube.com/watch?v=-oEZgfxrRy4) — 70,534 views (2026-11-02)
+- [The BEST Big Number Roguelike of 2026](https://www.youtube.com/watch?v=oSEoUIn7naY) — 71,810 views (2026-09-29)
+- [This INSANE Plants vs. Zombies Mod Shocked Me](https://www.youtube.com/watch?v=bcUNM9U4Uug) — 71,609 views (2025-10-22)
+- [My Favorite Idle Farming Game is Back](https://www.youtube.com/watch?v=4IFnXJIKidE) — 71,279 views (2026-11-03)
+- [Probably Stolen is Simply Excellent](https://www.youtube.com/watch?v=-oEZgfxrRy4) — 70,590 views (2026-11-02)
 - [THE DRAFTING OF ISAAC!](https://www.youtube.com/watch?v=uP2z5kvXkhQ) — 69,264 views (2018-05-12)
-- [Slot Machine + Balatro = NEW ROGUELIKE](https://www.youtube.com/watch?v=5Fb9GwVlEpk) — 68,623 views (2025-10-09)
+- [Slot Machine + Balatro = NEW ROGUELIKE](https://www.youtube.com/watch?v=5Fb9GwVlEpk) — 68,624 views (2025-10-09)
 - [This Banger Boss Battling Roguelike Only Uses ONE BUTTON!?](https://www.youtube.com/watch?v=yaYFvZWUVbY) — 67,697 views (2024-08-06)
-- [I'm Organizing Orgies.](https://www.youtube.com/watch?v=degtt6xGswo) — 65,321 views (2026-10-24)
+- [I'm Organizing Orgies.](https://www.youtube.com/watch?v=degtt6xGswo) — 65,331 views (2026-10-24)
 - [New Banger Co-op Roguelike Just Dropped](https://www.youtube.com/watch?v=fuYq98kMMWE) — 62,906 views (2024-07-24)
-- [The Rise of “Gambling” Roguelikes](https://www.youtube.com/watch?v=iybVcN31EiI) — 59,484 views (2025-06-15)
+- [The Rise of “Gambling” Roguelikes](https://www.youtube.com/watch?v=iybVcN31EiI) — 59,496 views (2025-06-15)
 
 ## Ambiguous videos
 
